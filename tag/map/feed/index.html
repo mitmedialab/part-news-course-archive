@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>map &#8211; Future of News and Participatory Media</title>
+	<atom:link href="https://partnews.mit.edu/tag/map/feed/" rel="self" type="application/rss+xml" />
+	<link>https://partnews.mit.edu</link>
+	<description>Treating newsgathering as an engineering problem... since 2012!</description>
+	<lastBuildDate>Wed, 08 Apr 2015 12:46:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2</generator>
+	<item>
+		<title>Is San Francisco&#8217;s Hot Housing Market Literally On Fire?</title>
+		<link>https://partnews.mit.edu/2015/04/07/is-san-franciscos-hot-housing-market-literally-on-fire/</link>
+				<comments>https://partnews.mit.edu/2015/04/07/is-san-franciscos-hot-housing-market-literally-on-fire/#comments</comments>
+				<pubDate>Wed, 08 Apr 2015 04:11:15 +0000</pubDate>
+		<dc:creator><![CDATA[Celeste LeCompte]]></dc:creator>
+				<category><![CDATA[Data Stories]]></category>
+		<category><![CDATA[data analysis]]></category>
+		<category><![CDATA[fire]]></category>
+		<category><![CDATA[map]]></category>
+
+		<guid isPermaLink="false">http://partnews.brownbag.me/?p=6826</guid>
+				<description><![CDATA[This project is a collaboration between David Jimenez, Charles Kaioun, Celeste LeCompte, and Léa Steinacker. In San Francisco, there is a growing concern about residential fires, which have displaced more than 100 residents from their homes since the beginning of the year. &#8230; <a href="https://partnews.mit.edu/2015/04/07/is-san-franciscos-hot-housing-market-literally-on-fire/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+								<content:encoded><![CDATA[<p><em>This project is a collaboration between <em>David Jimenez, </em>Charles Kaioun, Celeste LeCompte, and <em>Léa Steinacker</em>. </em></p>
+<p>In San Francisco, there is a growing concern about residential fires, which have displaced more than 100 residents from their homes since the beginning of the year. Have there been more big fires? If so, why? We turned to the data to answer the question.</p>
+<p><img class="aligncenter size-full wp-image-6847" alt="FIRE-in-SFO-draft_3" src="http://partnews.brownbag.me/wp-content/uploads/2015/04/FIRE-in-SFO-draft_3.jpg" width="2000" height="1774" srcset="https://partnews.mit.edu/wp-content/uploads/2015/04/FIRE-in-SFO-draft_3.jpg 2000w, https://partnews.mit.edu/wp-content/uploads/2015/04/FIRE-in-SFO-draft_3-300x266.jpg 300w, https://partnews.mit.edu/wp-content/uploads/2015/04/FIRE-in-SFO-draft_3-1024x908.jpg 1024w, https://partnews.mit.edu/wp-content/uploads/2015/04/FIRE-in-SFO-draft_3-338x300.jpg 338w" sizes="(max-width: 2000px) 100vw, 2000px" />Read on for more background on our analysis.<br />
+<span id="more-6826"></span></p>
+<h1>Analysis: Beware of data!</h1>
+<p>This should be the warning applied to all datasets and visualization tools. Illuminating and bringing a new perspective with data is key to asserting ideas, but using the wrong dataset or presenting the right one falsely is as easy as discovering new information.</p>
+<p>We started working on building fire data from the <a href="https://www.google.com/fusiontables/data?docid=14RaIUSTtuBY8exxghbvbdV95buc1214PIHkk1XWp#map:id=3">San Francisco Fire Department</a> and <a href="https://docs.google.com/spreadsheets/d/1pBX-z8ILT7VMDZIvzxwq1_3vwMv0KLVq8Eq_2f34lRM/edit#gid=0">news reports</a>, alongside the San Francisco Public Health Department’s <a href="https://data.sfgov.org/Public-Health/No-fault-Evictions-San-Francisco-CA/cx63-mamk">no-fault evictions data</a>. We came up with a nice map overlaying the two datasets:</p>
+<p><a href="https://www.google.com/maps/d/u/0/edit?mid=zFhXN7YcgoGA.kXXynYq1vvQc"><img alt="" src="https://lh4.googleusercontent.com/gEGHn7rdb4Y5m_4gUIJP6oEukCyoN7vLGrzR3aAldh3NgyXykJ30Q-dv1L20wJFRCUq29cewx0NGYRL7MWsXtI_gvQVWQ-UINC7BD7VjcZgmhkZIYUQsT3cRftiuMbyzL6tkqQM" width="624px;" height="352px;" /></a><br />
+Dots are fires — the redder the dot, the bigger the fire. The shaded areas on the map show the rate of evictions — the darker the shading, the higher the eviction rate.</p>
+<p>You could easily look at these maps and draw the conclusion: <strong>more fires happen where there is a lower eviction rate, or there is a higher eviction rate in zones with fewer fires.</strong></p>
+<p>But, look more closely, and you’ll see that this conclusion is flawed.</p>
+<p>First, the datasets come from different time frames and sources. The published evictions data is from 2005-2010, while the fire data is available from the city 2011-2012 and collected from news reports between August 2014 and the present.</p>
+<p>Second, the evictions data is only available by block group over the entire time period; by averaging the data this way, it erases the change and movement of eviction patterns over time.</p>
+<p>Finally, causation is a very subtle thing to test — even with good datasets and strong correlation, this is not so easy. I invite you to check this website (http://www.tylervigen.com/) if you don’t trust me.</p>
+<p>We aren&#8217;t the only ones asking these questions. <a href="http://www.antievictionmappingproject.net/fires.html">An online mapping project</a> has attempted to answer some of these same questions with their own data visualization. However, their maps have many of the same problems — and other problems — as <a href="https://www.google.com/fusiontables/DataSource?docid=14RaIUSTtuBY8exxghbvbdV95buc1214PIHkk1XWp">those</a> we <a href="http://celrae.cartodb.com/viz/2836a2c8-dcbe-11e4-8114-0e018d66dc29/embed_map">tested</a>.</p>
+<p>But having wrong data and wrong visualization is not solely the fault of the writers — it’s also on the data providers. Aiming for more transparency and informing people is a noble quest, but doing it wrong can lead to disastrous effects such as this one. The San Francisco Fire Department not only stopped publishing its public data after mid-2012 (though you can request it with a 10-day lead time), the data it provided was full of duplicates, unclear, and very difficult to fetch. (I invite you to check the way they do it, a collection of XMLs with incremental data encapsulated in ZIPs… a real pleasure…).</p>
+<p>If cities want to embrace open data, they need to find better ways to publish, maintain, and support the information they’re making available.</p>
+<p><em>Updated with revised image, April 8, 2015, 8:45am</em></p>
+]]></content:encoded>
+							<wfw:commentRss>https://partnews.mit.edu/2015/04/07/is-san-franciscos-hot-housing-market-literally-on-fire/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+		<item>
+		<title>Natural Disasters Vs Mining Operations in Indonesia</title>
+		<link>https://partnews.mit.edu/2015/02/23/natural-disasters-vs-mining-operations-in-indonesia/</link>
+				<comments>https://partnews.mit.edu/2015/02/23/natural-disasters-vs-mining-operations-in-indonesia/#comments</comments>
+				<pubDate>Tue, 24 Feb 2015 01:32:32 +0000</pubDate>
+		<dc:creator><![CDATA[Wahyu Dhyatmika]]></dc:creator>
+				<category><![CDATA[All]]></category>
+		<category><![CDATA[Four Hour Challenges]]></category>
+		<category><![CDATA[CartoDB]]></category>
+		<category><![CDATA[Indonesia]]></category>
+		<category><![CDATA[map]]></category>
+		<category><![CDATA[Mining]]></category>
+		<category><![CDATA[Natural Disaster]]></category>
+
+		<guid isPermaLink="false">http://partnews.brownbag.me/?p=5713</guid>
+				<description><![CDATA[I started this data visualization set at 4.30 pm today and finish it almost four hours later. This is the first time I try to visualize several data sets using CartoDB, after participating in a workshop on using this tool &#8230; <a href="https://partnews.mit.edu/2015/02/23/natural-disasters-vs-mining-operations-in-indonesia/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+								<content:encoded><![CDATA[<p>I started this data visualization set at 4.30 pm today and finish it almost four hours later. This is the first time I try to visualize several data sets using CartoDB, after participating in a workshop on using this tool last January.</p>
+<p>The idea is combining three different data sets about natural disasters in Indonesia (floods, landslides and forest fire) to see the places where it happened most of the time in 2014, and then layered it with a map of places where non oil and gas mining operates in the country.</p>
+<p>I suspect that most of these disasters happened in places where nature has lost its ability to sustain the balance, due to over exploitation of the resources. Obviously, although the trigger is natural cause, disasters such as flood, landslides and forest fire are basically human made.</p>
+<p>All of the data sets used here are taken from government database, available at http://data.go.id.</p>
+<p>I try to find other relevant datasets to combine the disasters map, such as: industrial zone maps, deforestation map, oil and gas mining zone, but unfortunately, those map don&#8217;t have similar georeference codes that can be read in CartoDB. So I finally settled with only a distribution map of the non-oil and gas mining industry.</p>
+<p>Initially I wasn&#8217;t sure how to make the connection because Indonesia has more that 1.000 mining locations spread all over the archipelago, but then I found the torque heat animation which I think can represent the different concentration level of the mining industry in different places. The heat animation can highlight and contrast the disasters map which are only represented by different colors of simple circles.</p>
+<p>From doing this exercise, I realize the complexity of data visualization, the importance of having a clean data set and the powerful image it can give to the audience. I hope when people look at this map, they can really make the connection between these horrible disasters and the mining industry that for years have been operating without a clear environmental regulation and oversights. (*)</p>
+<p>Click here to see the map: <a href="http://wahyudhyatmika.cartodb.com/viz/704eeb2c-bbaf-11e4-9f40-0e0c41326911/embed_map">Indonesian Natural Disasters Vs Mining Operation Distribution Map</a></p>
+]]></content:encoded>
+							<wfw:commentRss>https://partnews.mit.edu/2015/02/23/natural-disasters-vs-mining-operations-in-indonesia/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+							</item>
+		<item>
+		<title>GIFGIFmap</title>
+		<link>https://partnews.mit.edu/2014/04/02/gifgifmap/</link>
+				<comments>https://partnews.mit.edu/2014/04/02/gifgifmap/#comments</comments>
+				<pubDate>Wed, 02 Apr 2014 05:13:18 +0000</pubDate>
+		<dc:creator><![CDATA[Alexis]]></dc:creator>
+				<category><![CDATA[All]]></category>
+		<category><![CDATA[Data Stories]]></category>
+		<category><![CDATA[alexis hope]]></category>
+		<category><![CDATA[dancing otter]]></category>
+		<category><![CDATA[gif]]></category>
+		<category><![CDATA[kevin hu]]></category>
+		<category><![CDATA[map]]></category>
+		<category><![CDATA[travis rich]]></category>
+		<category><![CDATA[YOLO]]></category>
+
+		<guid isPermaLink="false">http://partnews.brownbag.me/?p=4556</guid>
+				<description><![CDATA[Background: Kevin Hu &#38; Travis Rich built a site called GIFGIF, which aims to crowd tag animated gifs with various emotions. From GIFGIF&#8217;s website: &#8220;An animated gif is a magical thing. It contains the power to convey emotion, empathy, and context in a &#8230; <a href="https://partnews.mit.edu/2014/04/02/gifgifmap/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+								<content:encoded><![CDATA[<p><img class="aligncenter" alt="" src="http://media.giphy.com/media/v0YiARQxj1yc8/giphy.gif" width="320" height="240" /></p>
+<p><strong>Background:</strong> Kevin Hu &amp; Travis Rich built a site called <a title="GIFGIF" href="http://gifgif.media.mit.edu" target="_blank">GIFGIF</a>, which aims to crowd tag animated gifs with various emotions. From GIFGIF&#8217;s website: &#8220;An animated gif is a magical thing. It contains the power to convey emotion, empathy, and context in a subtle way that text or emoticons simply can&#8217;t. GIFGIF is a project to capture that magic with quantitative methods. Our goal is to create a tool that lets people explore the world of gifs by the emotions they evoke, rather than by manually entered tags.&#8221; As we know, animated gifs are also a popular storytelling mechanism for <a href="http://buzzfeedminusgifs.tumblr.com" target="_blank">social news and entertainment websites</a>.</p>
+<p>The cultural phenomenon of using animated gifs to express emotions has been the subject of numerous journalistic inquiries:</p>
+<h1><strong><a href="http://www.nytimes.com/2013/02/14/fashion/common-on-early-internet-gif-files-make-comeback.html" target="_blank">Fresh From the Internet&#8217;s Attic</a> &#8211; NYTimes</strong></h1>
+<h1><a href="http://www.slate.com/articles/arts/culturebox/2010/10/christina_hendricks_on_an_endless_loop.html" target="_blank">Christina Hendricks on an Endless Loop: The Glorious GIF Renaissance</a> &#8211; Slate.com</h1>
+<p><strong><a href="http://www.wired.co.uk/news/archive/2014-02/21/gif-tumblr-love-story" target="_blank">GIF hearts Tumblr: a fairytale for the Internet age</a> &#8211; Wired.co.uk</strong></p>
+<p><strong>Visualization project for this week:</strong> Kevin, Travis, and I built a map tool so people can explore GIFGIF&#8217;s current dataset to see which gifs are most representative of certain emotions across different countries. Out of 1.8 million votes, 1.4 million votes had IP data which links the votes to the location of the voter. <a href="http://gifgif.media.mit.edu:5000" target="_blank">GIFGIFmap can be found here</a>.</p>
+<p><a href="http://gifgif.media.mit.edu:5000" target="_blank"><img class="alignnone size-full wp-image-4653" alt="Screen Shot 2014-04-02 at 1.03.12 AM" src="http://partnews.brownbag.me/wp-content/uploads/2014/04/Screen-Shot-2014-04-02-at-1.03.12-AM.png" width="1131" height="692" srcset="https://partnews.mit.edu/wp-content/uploads/2014/04/Screen-Shot-2014-04-02-at-1.03.12-AM.png 1131w, https://partnews.mit.edu/wp-content/uploads/2014/04/Screen-Shot-2014-04-02-at-1.03.12-AM-300x183.png 300w, https://partnews.mit.edu/wp-content/uploads/2014/04/Screen-Shot-2014-04-02-at-1.03.12-AM-1024x626.png 1024w, https://partnews.mit.edu/wp-content/uploads/2014/04/Screen-Shot-2014-04-02-at-1.03.12-AM-490x300.png 490w" sizes="(max-width: 1131px) 100vw, 1131px" /></a></p>
+<p>In a future version, we would like to show the top gifs per emotion that countries have in common with each other, and what are unique top gifs for each country (along the lines of <a href="http://whatwewatch.mediameter.org" target="_blank">What We Watch</a>). However, there are limitations to the GIFGIF data set in terms of global coverage. For example, the top 21 countries account for 92% of the votes. Additionally, we excluded countries that had less than 10,000 total votes across all categories, so as to avoid making generalizations based on limited data. We chose to include the number of votes per country (per emotion) to make the data set more transparent in terms of representation.</p>
+<p>We think the tool we are building could complement existing stories about the phenomenon of using animated gifs to communicate (stories like the ones we linked to above).</p>
+<p>These are some potential questions that we hope journalists could explore using a map interface to the GIFGIF dataset:</p>
+<p>1) Do people from different countries interpret the emotional content of gifs differently?</p>
+<p>2) If there are variances in interpretation, are there clusters of countries that have more similar interpretations? Do these match up with proximity, or immigration patterns?</p>
+<p>3) What top gifs per emotion are unique to a given country?</p>
+<p>&nbsp;</p>
+<p><em>Note: GIFGIF&#8217;s data will soon be made publicly available through an API.</em></p>
+<p>&nbsp;</p>
+]]></content:encoded>
+							<wfw:commentRss>https://partnews.mit.edu/2014/04/02/gifgifmap/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+	</channel>
+</rss>

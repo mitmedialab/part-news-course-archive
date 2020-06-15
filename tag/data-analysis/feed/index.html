@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>data analysis &#8211; Future of News and Participatory Media</title>
+	<atom:link href="https://partnews.mit.edu/tag/data-analysis/feed/" rel="self" type="application/rss+xml" />
+	<link>https://partnews.mit.edu</link>
+	<description>Treating newsgathering as an engineering problem... since 2012!</description>
+	<lastBuildDate>Wed, 08 Apr 2015 12:46:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2</generator>
+	<item>
+		<title>Is San Francisco&#8217;s Hot Housing Market Literally On Fire?</title>
+		<link>https://partnews.mit.edu/2015/04/07/is-san-franciscos-hot-housing-market-literally-on-fire/</link>
+				<comments>https://partnews.mit.edu/2015/04/07/is-san-franciscos-hot-housing-market-literally-on-fire/#comments</comments>
+				<pubDate>Wed, 08 Apr 2015 04:11:15 +0000</pubDate>
+		<dc:creator><![CDATA[Celeste LeCompte]]></dc:creator>
+				<category><![CDATA[Data Stories]]></category>
+		<category><![CDATA[data analysis]]></category>
+		<category><![CDATA[fire]]></category>
+		<category><![CDATA[map]]></category>
+
+		<guid isPermaLink="false">http://partnews.brownbag.me/?p=6826</guid>
+				<description><![CDATA[This project is a collaboration between David Jimenez, Charles Kaioun, Celeste LeCompte, and Léa Steinacker. In San Francisco, there is a growing concern about residential fires, which have displaced more than 100 residents from their homes since the beginning of the year. &#8230; <a href="https://partnews.mit.edu/2015/04/07/is-san-franciscos-hot-housing-market-literally-on-fire/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+								<content:encoded><![CDATA[<p><em>This project is a collaboration between <em>David Jimenez, </em>Charles Kaioun, Celeste LeCompte, and <em>Léa Steinacker</em>. </em></p>
+<p>In San Francisco, there is a growing concern about residential fires, which have displaced more than 100 residents from their homes since the beginning of the year. Have there been more big fires? If so, why? We turned to the data to answer the question.</p>
+<p><img class="aligncenter size-full wp-image-6847" alt="FIRE-in-SFO-draft_3" src="http://partnews.brownbag.me/wp-content/uploads/2015/04/FIRE-in-SFO-draft_3.jpg" width="2000" height="1774" srcset="https://partnews.mit.edu/wp-content/uploads/2015/04/FIRE-in-SFO-draft_3.jpg 2000w, https://partnews.mit.edu/wp-content/uploads/2015/04/FIRE-in-SFO-draft_3-300x266.jpg 300w, https://partnews.mit.edu/wp-content/uploads/2015/04/FIRE-in-SFO-draft_3-1024x908.jpg 1024w, https://partnews.mit.edu/wp-content/uploads/2015/04/FIRE-in-SFO-draft_3-338x300.jpg 338w" sizes="(max-width: 2000px) 100vw, 2000px" />Read on for more background on our analysis.<br />
+<span id="more-6826"></span></p>
+<h1>Analysis: Beware of data!</h1>
+<p>This should be the warning applied to all datasets and visualization tools. Illuminating and bringing a new perspective with data is key to asserting ideas, but using the wrong dataset or presenting the right one falsely is as easy as discovering new information.</p>
+<p>We started working on building fire data from the <a href="https://www.google.com/fusiontables/data?docid=14RaIUSTtuBY8exxghbvbdV95buc1214PIHkk1XWp#map:id=3">San Francisco Fire Department</a> and <a href="https://docs.google.com/spreadsheets/d/1pBX-z8ILT7VMDZIvzxwq1_3vwMv0KLVq8Eq_2f34lRM/edit#gid=0">news reports</a>, alongside the San Francisco Public Health Department’s <a href="https://data.sfgov.org/Public-Health/No-fault-Evictions-San-Francisco-CA/cx63-mamk">no-fault evictions data</a>. We came up with a nice map overlaying the two datasets:</p>
+<p><a href="https://www.google.com/maps/d/u/0/edit?mid=zFhXN7YcgoGA.kXXynYq1vvQc"><img alt="" src="https://lh4.googleusercontent.com/gEGHn7rdb4Y5m_4gUIJP6oEukCyoN7vLGrzR3aAldh3NgyXykJ30Q-dv1L20wJFRCUq29cewx0NGYRL7MWsXtI_gvQVWQ-UINC7BD7VjcZgmhkZIYUQsT3cRftiuMbyzL6tkqQM" width="624px;" height="352px;" /></a><br />
+Dots are fires — the redder the dot, the bigger the fire. The shaded areas on the map show the rate of evictions — the darker the shading, the higher the eviction rate.</p>
+<p>You could easily look at these maps and draw the conclusion: <strong>more fires happen where there is a lower eviction rate, or there is a higher eviction rate in zones with fewer fires.</strong></p>
+<p>But, look more closely, and you’ll see that this conclusion is flawed.</p>
+<p>First, the datasets come from different time frames and sources. The published evictions data is from 2005-2010, while the fire data is available from the city 2011-2012 and collected from news reports between August 2014 and the present.</p>
+<p>Second, the evictions data is only available by block group over the entire time period; by averaging the data this way, it erases the change and movement of eviction patterns over time.</p>
+<p>Finally, causation is a very subtle thing to test — even with good datasets and strong correlation, this is not so easy. I invite you to check this website (http://www.tylervigen.com/) if you don’t trust me.</p>
+<p>We aren&#8217;t the only ones asking these questions. <a href="http://www.antievictionmappingproject.net/fires.html">An online mapping project</a> has attempted to answer some of these same questions with their own data visualization. However, their maps have many of the same problems — and other problems — as <a href="https://www.google.com/fusiontables/DataSource?docid=14RaIUSTtuBY8exxghbvbdV95buc1214PIHkk1XWp">those</a> we <a href="http://celrae.cartodb.com/viz/2836a2c8-dcbe-11e4-8114-0e018d66dc29/embed_map">tested</a>.</p>
+<p>But having wrong data and wrong visualization is not solely the fault of the writers — it’s also on the data providers. Aiming for more transparency and informing people is a noble quest, but doing it wrong can lead to disastrous effects such as this one. The San Francisco Fire Department not only stopped publishing its public data after mid-2012 (though you can request it with a 10-day lead time), the data it provided was full of duplicates, unclear, and very difficult to fetch. (I invite you to check the way they do it, a collection of XMLs with incremental data encapsulated in ZIPs… a real pleasure…).</p>
+<p>If cities want to embrace open data, they need to find better ways to publish, maintain, and support the information they’re making available.</p>
+<p><em>Updated with revised image, April 8, 2015, 8:45am</em></p>
+]]></content:encoded>
+							<wfw:commentRss>https://partnews.mit.edu/2015/04/07/is-san-franciscos-hot-housing-market-literally-on-fire/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+	</channel>
+</rss>

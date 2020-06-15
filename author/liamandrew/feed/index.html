@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Liam Andrew &#8211; Future of News and Participatory Media</title>
+	<atom:link href="https://partnews.mit.edu/author/liamandrew/feed/" rel="self" type="application/rss+xml" />
+	<link>https://partnews.mit.edu</link>
+	<description>Treating newsgathering as an engineering problem... since 2012!</description>
+	<lastBuildDate>Wed, 01 Apr 2015 05:21:19 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2</generator>
+	<item>
+		<title>The New gTLDs are Here! Woohoo!</title>
+		<link>https://partnews.mit.edu/2015/04/07/the-new-gtlds-are-here-woohoo/</link>
+				<comments>https://partnews.mit.edu/2015/04/07/the-new-gtlds-are-here-woohoo/#comments</comments>
+				<pubDate>Tue, 07 Apr 2015 12:35:06 +0000</pubDate>
+		<dc:creator><![CDATA[Liam Andrew]]></dc:creator>
+				<category><![CDATA[All]]></category>
+
+		<guid isPermaLink="false">http://partnews.brownbag.me/?p=6782</guid>
+				<description><![CDATA[Go here and here to see the CartoDB visualizations. Below is my story behind them. The new gTLDs are here! Thanks IANA! Are you as excited as I am?? &#8230; What? Okay, so it’s not a very sexy topic (and it seems like &#8230; <a href="https://partnews.mit.edu/2015/04/07/the-new-gtlds-are-here-woohoo/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+								<content:encoded><![CDATA[<p><i>Go <a href="http://cdb.io/1DCBAmQ" target="_blank">here</a> and <a href="http://cdb.io/1DCwQ0s" target="_blank">here</a> to see the CartoDB visualizations. Below is my story behind them.</i></p>
+<p><img class="alignnone size-medium wp-image-6786" alt="carto-cctlds" src="http://partnews.brownbag.me/wp-content/uploads/2015/04/carto-cctlds-300x196.png" width="300" height="196" srcset="https://partnews.mit.edu/wp-content/uploads/2015/04/carto-cctlds-300x196.png 300w, https://partnews.mit.edu/wp-content/uploads/2015/04/carto-cctlds-1024x670.png 1024w, https://partnews.mit.edu/wp-content/uploads/2015/04/carto-cctlds-457x300.png 457w, https://partnews.mit.edu/wp-content/uploads/2015/04/carto-cctlds.png 1392w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>The new gTLDs are here! Thanks IANA! Are you as excited as I am??</p>
+<p>&#8230;</p>
+<p>What?</p>
+<p><span id="more-6782"></span><br />
+Okay, so it’s not a very sexy topic (and it seems like they go out of their way to remind you of that) but the <a href="http://www.iana.org/">Internet Assigned Numbers Authority</a> (IANA) — which manages the global coordination of internet protocols — has added hundreds of new generic top-level domains (gTLDs) to the existing pool, with promises for many more.</p>
+<p>What’s a top-level domain? In short, it’s the .com, .edu, .io, or .ly at the end of an internet address. The URL is often the first impression we get of any internet resource—sometimes I’ll hover over a link just to see what it says, and in that case it’s my <i>only</i> impression. While a URL is only a pointer, it does provide a window into what might be behind it, and I know I trust .com or .org over .biz.</p>
+<p>Now the IANA has made it much easier to add new TLDs, and soon you might see more and more suffixes like .nyc, .audio, or even the surprisingly popular .realtor. (My personal favorite: .horse). Some of these are open, but others will come with their own regulations on usage or access (for instance, .nyc only allows proven New York City residents or institutions to register, while .xxx and .adult are reserved for obvious reasons).</p>
+<p>URLs are far less concrete and fixed than physical addresses, but they do still represent local ties. URL suffixes that you might have seen like .ly, .tv, and .io actually belong to Lybia, Tuvalu, and the British Indian Ocean Territory, respectively, and are usually leased out to companies in the US or Europe for a fee (using one of these URLs is rather annoyingly called a “domain hack”). Such exchanges reflect the dynamics of communication and transaction on the web, where borders are more permeable than in the physical world; it’s also a reminder of the economic realities behind the curtain, with these often small and extremely poor countries selling virtual land to tech startups.</p>
+<p>The new “generic” TLDs are distinct from these reserved “country code” TLDs, and won’t be affiliated specifically with physical borders. But many of the more popular new TLDs are location-based (.nyc, .berlin, .paris), or reserved for specific companies or practices (like .wme, specific to <a href="http://www.wmeentertainment.com/">William Morris</a>). So these domains reflect something about who’s going to use them. Just today, NPR&#8217;s Morning Edition considers whether some of these suffixes are <a href="http://www.npr.org/blogs/alltechconsidered/2015/04/07/397886748/a-new-internet-domain-extortion-or-free-speech">akin to extortion</a>; domains like .wtf, .fail, or .sucks are quickly snatched up by companies who are worried about what could turn up there, but free speech advocates see it as a positive force. So this new industry is already brewing controversy.</p>
+<p>I was curious about two main questions, which led me to two data sets:</p>
+<ol>
+<li>At this early stage, which of the new TLDs are gaining popularity?</li>
+<li>Who are the entrepreneurs and technologists starting these domains, and why? Who keeps up the registries, both new and old? I can understand the commercial promise of a domain like .news or .travel, but it still seems like an unknown quantity. Who is behind this next generation of domains?</li>
+</ol>
+<h1>The Project</h1>
+<p>A few months ago I stumbled across a registry of all the domain name registrars. I liked the idea of making a register of registrars, so I started with this, which led me to two interesting datasets. The idea of an old-fashioned mashup came to mind:</p>
+<ol>
+<li>the ICANN’s <a href="https://www.icann.org/resources/pages/reports-2014-03-04-en">monthly registry reports</a>, which had detailed data on the volume of domain registrations (which I took as a proxy for the number of sites) for generic TLDs, an</li>
+<li>the IANA&#8217;s <a href="http://www.iana.org/domains/root/db">root zone database</a>, which had the addresses for both generic and country-level TLDs.</li>
+</ol>
+<div id="attachment_6783" style="width: 310px" class="wp-caption alignright"><img aria-describedby="caption-attachment-6783" class="size-medium wp-image-6783" alt="Gathering insights from d3plus turned out to be messy." src="http://partnews.brownbag.me/wp-content/uploads/2015/04/d3plus-300x147.png" width="300" height="147" srcset="https://partnews.mit.edu/wp-content/uploads/2015/04/d3plus-300x147.png 300w, https://partnews.mit.edu/wp-content/uploads/2015/04/d3plus-1024x503.png 1024w, https://partnews.mit.edu/wp-content/uploads/2015/04/d3plus-500x246.png 500w, https://partnews.mit.edu/wp-content/uploads/2015/04/d3plus.png 1268w" sizes="(max-width: 300px) 100vw, 300px" /><p id="caption-attachment-6783" class="wp-caption-text">Gathering insights from d3plus was difficult.</p></div>
+<p>First I had to scrape the data from both sites. The ICANN’s data was hidden behind CSVs, which I had to programmatically extract, but it did give me historical data. I got a total of 912 registries, with about 1000 institutions sponsoring and administering them; in December 2014, the generic TLDs alone housed 158 million domains (75% of these, however, were .com).</p>
+<p>I started by trying some graphs with d3plus, but the differences in scale made it very hard to graph; the 119 million domains on .com (over half of the web), or even the 15 million .net domains, simply can’t be graphed next to many of these that still number in the hundreds or thousands. The sheer number also made it a little messy. But it started to give me an idea of which new domains are gaining popularity.</p>
+<p>The IANA site contained full addresses for the sponsor, administrative contact, and technical contact of each domain, so course I thought of a map; and I wanted to see what was behind these addresses, so I added street view screenshots where available. Unfortunately the address data was not very clean, and the process of geocoding the data was a challenge— as a result, don’t take these maps as a complete picture of all registries.</p>
+<div id="attachment_6786" style="width: 1402px" class="wp-caption alignnone"><img aria-describedby="caption-attachment-6786" class="size-full wp-image-6786" alt="Map of some of the country code TLD registrars. Click on the map to see the full interactive viz on CartoDB" src="http://partnews.brownbag.me/wp-content/uploads/2015/04/carto-cctlds.png" width="1392" height="912" srcset="https://partnews.mit.edu/wp-content/uploads/2015/04/carto-cctlds.png 1392w, https://partnews.mit.edu/wp-content/uploads/2015/04/carto-cctlds-300x196.png 300w, https://partnews.mit.edu/wp-content/uploads/2015/04/carto-cctlds-1024x670.png 1024w, https://partnews.mit.edu/wp-content/uploads/2015/04/carto-cctlds-457x300.png 457w" sizes="(max-width: 1392px) 100vw, 1392px" /><p id="caption-attachment-6786" class="wp-caption-text">Map of some of the country code TLD registrars. Click on the map to see the full interactive viz on CartoDB</p></div>
+<p>Google Maps’ geocoding API was giving me trouble, both with quota limits and bizarre results (I admit my data wasn’t the cleanest, but at one point it claimed to not find 1600 Amphitheatre Parkway!). Also, naturally the geo data is biased towards better-mapped parts of the world. Given more time I would make sure the data was comprehensive, and I would clean and structure the address data so it could make best-guess assumptions. However, these views allow you to get a glimpse and explore certain pieces.</p>
+<div id="attachment_6785" style="width: 1402px" class="wp-caption alignnone"><img aria-describedby="caption-attachment-6785" class="size-full wp-image-6785" alt="Weighted map of some generic TLD registrars. Click on the map to see the full interactive viz on CartoDB." src="http://partnews.brownbag.me/wp-content/uploads/2015/04/carto-gtlds.png" width="1392" height="912" srcset="https://partnews.mit.edu/wp-content/uploads/2015/04/carto-gtlds.png 1392w, https://partnews.mit.edu/wp-content/uploads/2015/04/carto-gtlds-300x196.png 300w, https://partnews.mit.edu/wp-content/uploads/2015/04/carto-gtlds-1024x670.png 1024w, https://partnews.mit.edu/wp-content/uploads/2015/04/carto-gtlds-457x300.png 457w" sizes="(max-width: 1392px) 100vw, 1392px" /><p id="caption-attachment-6785" class="wp-caption-text">Weighted map of some generic TLD registrars. Click on the map to see the full interactive viz on CartoDB.</p></div>
+<p>I ended up with two visualizations, screnshotted and linked above:</p>
+<ol>
+<li>A “heatmap” of some of the sponsors, administrators, and technicians, weighted by the combined traffic from each domain it owned.</li>
+<li>A map of all country-code TLD sponsors, administrators, and technicians for which geo data was available.</li>
+</ol>
+<p>Again, the data is not complete, but I was able to get some insights and find some interesting outliers.</p>
+<h1>Findings</h1>
+<p>Especially considering what the map leaves out, the country-level domains are widely spread out around the globe. But when only viewing the generic TLDs, or weighing it by traffic, the US and Europe dominate the map. One that stands out is .top, which comes from China and seems to have gained popularity recently.</p>
+<p>Isolating the data from September-December 2014, some of the more popular and fastest-growing new domain names include .realtor (89,000 domains), .nyc (62,000), .london (54,000), .link (53,000), and .top (36,000, based in China). Some of the other popular ones include .website, .rocks, and of course, .cat, which is for the purposes of Catalonia, but I’m sure some have &#8220;hacked&#8221; it for internet memes. The ones gaining the most traction range from novelties to geographies and professional credentials.</p>
+<div id="attachment_6784" style="width: 1010px" class="wp-caption alignnone"><a href="http://partnews.brownbag.me/wp-content/uploads/2015/04/carto-top-gtlds.png" target="_blank"><img aria-describedby="caption-attachment-6784" class="size-full wp-image-6784" alt="Top 20 generic TLDs with the most domains from December 2014 (log scale)." src="http://partnews.brownbag.me/wp-content/uploads/2015/04/carto-top-gtlds.png" width="1000" height="499" srcset="https://partnews.mit.edu/wp-content/uploads/2015/04/carto-top-gtlds.png 1000w, https://partnews.mit.edu/wp-content/uploads/2015/04/carto-top-gtlds-300x149.png 300w, https://partnews.mit.edu/wp-content/uploads/2015/04/carto-top-gtlds-500x249.png 500w" sizes="(max-width: 1000px) 100vw, 1000px" /></a><p id="caption-attachment-6784" class="wp-caption-text">Top 20 generic TLDs with the most domains from December 2014 (log scale).</p></div>
+<p>My favorite moment when exploring the data was when I noticed a hotspot around D.C. and clicked around. I saw one for the suffix .desi— it stood out because it was a nice house rather than the usual generic office park. It turns out that the founders <a href="http://registry.desi/#post-24">started the domain</a> to serve as a hub for the desi (i.e. South Asian) community and diaspora worldwide.</p>
+<p>Desi also happens to be the name of my CMS colleague <a href="http://desigonzalez.tumblr.com/" target="_blank">Desi Gonzalez</a> (weirdly, Desi Networks LLC is also based a 15 minute drive from her home), so I immediately alerted her. She has already snatched up at least 2 domains, making my data obsolete, and she has threatened to buy 20 more (my personal favorite: whois.desi).</p>
+<p>While you may not find your name among the new TLDs, another one might serve well for a new project or business, or make you curious about its origin. It will be interesting to follow the future of these virtual speculations, and see if startups will ever move past the usual &#8220;hacks&#8221; once the existing domains run out of space.</p>
+]]></content:encoded>
+							<wfw:commentRss>https://partnews.mit.edu/2015/04/07/the-new-gtlds-are-here-woohoo/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+		<item>
+		<title>Tracing the links of the Germanwings disaster</title>
+		<link>https://partnews.mit.edu/2015/03/31/tracing-the-links-of-the-germanwings-disaster/</link>
+				<comments>https://partnews.mit.edu/2015/03/31/tracing-the-links-of-the-germanwings-disaster/#comments</comments>
+				<pubDate>Wed, 01 Apr 2015 04:25:03 +0000</pubDate>
+		<dc:creator><![CDATA[Liam Andrew]]></dc:creator>
+				<category><![CDATA[All]]></category>
+		<category><![CDATA[Explainers]]></category>
+		<category><![CDATA[Germanwings]]></category>
+		<category><![CDATA[link analysis]]></category>
+
+		<guid isPermaLink="false">http://partnews.brownbag.me/?p=6715</guid>
+				<description><![CDATA[A week ago a German jet crashed into the Alps, killing all 144 people on board. For the first several hours after the tragedy it was considered an accident, but it is now apparent that the plane’s co-pilot, Andreas Lubitz, is responsible, and &#8230; <a href="https://partnews.mit.edu/2015/03/31/tracing-the-links-of-the-germanwings-disaster/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+								<content:encoded><![CDATA[<p>A week ago a German jet crashed into the Alps, killing all 144 people on board. For the first several hours after the tragedy <a href="http://www.nytimes.com/2015/03/25/world/europe/germanwings-crash.html">it was considered an accident</a>, but it is now apparent that the plane’s co-pilot, Andreas Lubitz, is responsible, and details continue to emerge about his past. As more facts surface, news outlets covering the tragedy have released them in incremental updates. These updates have touched on a wide variety of questions: Why was no one aware of or worried about his mental health issues? Should he have been flying a plane in the first place? Have suicide plane crashes happened before? How has small-town Germany — such as the town of the <a href="http://www.nytimes.com/2015/03/25/world/europe/in-haltern-a-school-year-highlight-that-ended-in-disaster.html">16 high school students on board</a> or the <a href="http://www.nytimes.com/2015/03/31/world/europe/germanwings-crash-leaves-home-city-of-andreas-lubitz-pilot-bewildered-and-bristling.html">pilot’s hometown</a> — reacted to the horrific event?</p>
+<p>When publishing these updates, publishers are often linking back to previous stories as a proxy for background information. The “original” story breaking the incident tends to be low on hyperlinks (such as the first link above, which only links to a Germany topic page) while later updates start to link back to archival stories for context. I was curious whether these internal, archival hyperlinks could be followed in order to automatically create a community of stories, one that touches on a variety of aspects of the incident. Links are rarely added to stories retroactively, so in general, following the links means traveling back in time. Could a crawler organize all the links for me, and present historical content (whether over the past 3 days or 10 years) for the Germanwings disaster?</p>
+<p>I built a crawler that follows the inline, internal links in an article, and subsequently builds a graph spidering out from the source, storing metadata like link location and anchor text along the way. It doesn’t include navigational links, only links inside the article text; and it won’t follow links to YouTube or Wikipedia, just, for instance, the Times. This quickly builds up a dialogue of stories within a publisher’s archive, around one story; from here, it is easy to experiment with simple ranking algorithms like the most-cited, the oldest, or the longest article.</p>
+<div>
+<p>I chose three incremental update articles from March 30, one each from the Times, the Post, and the Guardian, all reporting that Lubitz was treated for suicidal tendencies:</p>
+<ul>
+<li><strong>NYT</strong> <a href="http://www.nytimes.com/2015/03/31/world/europe/germanwings-copilot-andreas-lubitz.html">http://www.nytimes.com/2015/03/31/world/europe/germanwings-copilot-andreas-lubitz.html</a></li>
+<li><strong>Post</strong> <a href="http://www.washingtonpost.com/world/europe/officials-co-pilot-in-german-plane-crash-was-treated-for-suicidal-tendencies/2015/03/30/a7b1eb96-d6da-11e4-bf0b-f648b95a6488_story.html">http://www.washingtonpost.com/world/europe/officials-co-pilot-in-german-plane-crash-was-treated-for-suicidal-tendencies/2015/03/30/a7b1eb96-d6da-11e4-bf0b-f648b95a6488_story.html</a> (why are the Post&#8217;s URLs so ugly? A subject for another explainer)</li>
+<li><strong>Guardian</strong> <a href="http://www.theguardian.com/world/2015/mar/30/germanwings-co-pilot-andreas-lubitz-treated-suicidal-tendencies">http://www.theguardian.com/world/2015/mar/30/germanwings-co-pilot-andreas-lubitz-treated-suicidal-tendencies</a></li>
+</ul>
+<p>For each of these three, I spidered out as far as they could go (though in the case of the Times that turned infinite, so I had to stop it somewhere).</p>
+<h1>New York Times</h1>
+<p>My first strategy was to simply look at the links that the article already contained. While the system can track links pointing in as well as out, this aticle only had outlinks; presumably this is because a) it was a very recent article at the time of the query, and b) we cannot be sure that we have all of the related stories from the given spider.</p>
+<p><img class="alignnone size-full wp-image-6724" alt="F46D5429-FF4A-4CC8-8727-F113C3CC1794" src="http://partnews.brownbag.me/wp-content/uploads/2015/03/F46D5429-FF4A-4CC8-8727-F113C3CC1794.png" width="365" height="559" srcset="https://partnews.mit.edu/wp-content/uploads/2015/03/F46D5429-FF4A-4CC8-8727-F113C3CC1794.png 365w, https://partnews.mit.edu/wp-content/uploads/2015/03/F46D5429-FF4A-4CC8-8727-F113C3CC1794-195x300.png 195w" sizes="(max-width: 365px) 100vw, 365px" /><br />
+<em>Clicking on a card will reveal the card&#8217;s links in turn&#8211;both inlinks and outlinks.</em></p>
+<p>The “germanwings-crash.html” article had several links that formed a clear community, including archival stories about plane crashes from 1999 and 2005. The 1999 story was about an EgyptAir crash that has also been deemed a pilot suicide. This suggests that old related articles could surface from following hyperlinks, even if they were not initially tagged or indexed as being related. The 2005 crash is linked in the context of early speculation about the cause of the crash (cabin depressurization was initially considered). It is a less useful signal, but it could be useful in the right context.</p>
+<p>This community of links is generally relevant, but it does veer into other territories sometimes. The Times&#8217; large topic pages about France, Spain, and Germany all led the crawler towards stories about the Eurozone economy and the Charlie Hebdo shooting.</p>
+<h1>Washington Post</h1>
+<p>The Wapo article collected a community of just 32 links, forming a small community. When I limited the spidering to just 3 levels out, it yielded 12 Germanwings stories covering various aspects of the incident, as well as two older ones, one of which is titled “Ten major international airlines disasters in the past 50 years.”</p>
+<p><a href="https://www.google.com/fusiontables/embedviz?containerId=googft-gviz-canvas&amp;viz=GVIZ&amp;t=GRAPH&amp;gc=false&amp;gd=true&amp;sdb=1&amp;rmax=100000&amp;uiversion=2&amp;q=select+col0%2C+col1+from+1ysYlwVrodIyXms9_w1hAtapkOp7qUVuroWgj4gCW&amp;qrs=+where+col0+%3E%3D+&amp;qre=+and+col0+%3C%3D+&amp;qe=&amp;state=%7B%22ps%22%3A%221_10_-88_-2t_y_-32_9_6_76_-c_m_-75_2n_z_-8p_-1b_c_10_-1g_0_45_-2_j_-5v_27_2_50_j_v_-5r_2_k_-5n_17_q_-4v_-b_1j_2j_-4_9_t_-8_r_-4g_s_1p_-11_0_x_-7b_-1a_o_-6f_1c_1_5o_-6_1n_-6k_1z_8_16_n_p_-6b_2v_l_-4y_1p_a_i_j_1d_-87_-1x_2y_-7l_3e_d_b_-1p_e_k_-23_s_-4t_-13_t_-58_-10_u_-4g_-y_f_1n_-1x_w_-57_h_g_y_-28_h_1c_-26_i_1s_-1i_7_5p_-x_11_-6k_-18_12_-6p_-1r_13_-7j_-3c_14_-7y_-3m_15_-8q_-3h_16_-90_-36_17_-7e_-33_18_-95_-2y_19_-94_-2o_1a_-8z_-3g_1b_-8d_-3n_1c_-85_-3s_3_3u_n_1e_-8m_-3q_1f_-7h_-2f_1g_-7o_-3k_4_3v_-s_1i_-8z_-2e_5_4d_-t_1k_2n_m_1l_2k_-v_1m_30_-o_n_-5e_2v_1o_-79_1k_b_1d_1d_1q_-j_-j_1r_-q_p_1s_-12_-r_1t_6o_-z_1u_7x_-r_1v_71_-16_1w_7p_-10_1x_7z_-4_1y_80_-g_1z_7k_e_20_7t_7_21_77_h_22_6s_d_23_7e_-16_24_-3c_-k_25_-29_-1_26_-2f_-c_27_-2s_12_28_-2b_o_29_-2p_-k_2a_-34_13_2b_-30_-n_2c_-2i_x_2d_-28_c_2e_-3n_-b_2f_-3g_y_2g_5g_16_2h_55_-7_2i_4t_-7_2j_4x_1b_2k_-8e_-l_2l_-9d_-s_2m_-9f_-1p_2n_-94_-l_2o_-8s_-i_2p_-9j_-1d_2q_-9i_-12_2r_-45_1i_2s_-80_2k_2t_-6w_3g_2u_-79_3h_2v_-7z_2w_2w_-7v_27_2x_-7u_36_1h_-7d_-2s_%22%2C%22cx%22%3A19.968550405117647%2C%22cy%22%3A-23.860242247462924%2C%22sw%22%3A905.8794336248101%2C%22sh%22%3A515.4921236267637%2C%22z%22%3A0.49820840737611954%7D&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;width=1000&amp;height=600" target="blank"><img class="alignnone size-full wp-image-6726" alt="wapo_links" src="http://partnews.brownbag.me/wp-content/uploads/2015/03/wapo_links.png" width="1024" height="432" srcset="https://partnews.mit.edu/wp-content/uploads/2015/03/wapo_links.png 1024w, https://partnews.mit.edu/wp-content/uploads/2015/03/wapo_links-300x126.png 300w, https://partnews.mit.edu/wp-content/uploads/2015/03/wapo_links-500x210.png 500w" sizes="(max-width: 1024px) 100vw, 1024px" /></a><br />
+<em>Click on the image to see the graph in Fusion Tables.</em></p>
+<p>The Washington Post articles dipped the farthest back in the past, with tangential but still related events like the missing Malaysia Airlines flight and the debate over airline cell phone regulations.</p>
+<h1>The Guardian</h1>
+<p>The Guardian crawler pulled 59 links, including the widest variety of topic and entity pages. It also picked up article author homepages though (e.g. <a href="http://www.theguardian.com/profile/melissa-davey">http://www.theguardian.com/profile/melissa-davey</a>). 32 of these links ended up being relevant Germanwings articles, which is well more than I expected to see&#8230;I wouldn&#8217;t have guessed the Guardian had published so many stories about it so quickly. These ranged from the forthcoming Lufthansa lawsuit to the safety of the Airbus.</p>
+<p><a href="https://www.google.com/fusiontables/embedviz?containerId=googft-gviz-canvas&amp;viz=GVIZ&amp;t=GRAPH&amp;gc=false&amp;gd=true&amp;sdb=1&amp;rmax=100000&amp;q=select+col0%2C+col1+from+1V8ywx6Ts-r6v56eOMQvjcRgdINX_ONFQpv2i3mIE&amp;qrs=+where+col0+%3E%3D+&amp;qre=+and+col0+%3C%3D+&amp;qe=&amp;uiversion=2&amp;state=%7B%22ps%22%3A%221_6_-1l_-q_w_-2z_b_1c_-9p_-3e_u_-40_-7_1z_-5k_24_y_-u_1b_2d_6_-3q_10_-23_-23_12_-79_-26_3_-3c_-1a_25_-1b_-3l_15_-30_-3h_23_-s_-1j_14_-2v_-1y_11_-33_-k_7_-3a_1a_5_-r_-m_t_-2c_-e_1n_4_-15_k_1y_-4n_v_-1x_e_13_-3t_-2s_b_p_15_1a_-40_-1v_1i_-2h_1j_1k_-2h_-2r_24_-15_-2h_d_-4_-1_1h_-1t_1x_9_-4j_-2j_4_-4r_-15_f_2e_1j_c_-d_q_e_i_21_1b_-3z_-z_g_-9_2d_a_-37_-2j_0_-8d_-1l_8_-2d_-1a_q_-6u_2w_18_-2q_3z_1j_-2n_2z_1m_1_-1p_21_-11_e_i_3g_1r_2f_-4p_-3c_1v_-ai_-33_1_-8t_-10_r_-7a_3h_1d_-80_-2e_1e_-78_-2z_1f_-7p_-2u_1g_-7k_-1h_p_1x_-5e_o_2p_-50_16_-3g_-4a_n_2l_-46_1l_-4v_7_17_-30_-4e_m_2e_-5b_1o_-ak_-3g_1p_-9s_-2m_1q_-a8_-43_1r_-a9_-2r_1s_-92_-3v_1t_-ah_-3t_1u_-9v_-49_x_-5l_-13_1w_-9g_-47_1x_-1k_13_1y_-1w_16_l_2s_-4l_20_1_35_z_12_2m_22_-u_27_j_2u_25_19_-2r_4o_h_32_16_26_-69_2h_27_-68_1n_28_-57_2w_29_-60_2v_2a_-5m_30_2b_-6e_22_2c_-1h_-4g_2_-94_-1g_2e_-11_-4f_s_-7l_2z_2g_11_-1a_2h_45_1v_2i_j_-4i_2j_4_-4l_2k_10_-3o_2l_v_-46_2m_-4_-28_%22%2C%22cx%22%3A-64.21424472204161%2C%22cy%22%3A-44.45606370432445%2C%22sw%22%3A1055.2871488222727%2C%22sh%22%3A600.5128201284813%2C%22z%22%3A0.7415808606225053%7D&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;width=1000&amp;height=600" target="blank"><img class="alignnone size-full wp-image-6723" alt="guardian_links_germanwings" src="http://partnews.brownbag.me/wp-content/uploads/2015/03/guardian_links_germanwings.png" width="983" height="649" srcset="https://partnews.mit.edu/wp-content/uploads/2015/03/guardian_links_germanwings.png 983w, https://partnews.mit.edu/wp-content/uploads/2015/03/guardian_links_germanwings-300x198.png 300w, https://partnews.mit.edu/wp-content/uploads/2015/03/guardian_links_germanwings-454x300.png 454w" sizes="(max-width: 983px) 100vw, 983px" /></a><br />
+<em>Click on the image to see the graph in Fusion Tables</em></p>
+<p>The Guardian seems to have amassed the biggest network, and tellingly, they already have the <a href="http://www.theguardian.com/world/germanwings-flight-4u9525">dedicated topic page</a> to show for it, even if it’s just a simple timeline format. The graph appears more clustered than Wapo&#8217;s, which was more sequential. But it doesn&#8217;t dip as far back in the past, and at one point, the crawler did find itself off-topic on a classical music tangent (the culprit was a story about an opera performance that honored the Germanwings victims).</p>
+<h4>Conclusion</h4>
+<p>In the end, the crawler worked well on a limited scope, but I found two problems for link-oriented recommendation and context provision:</p>
+<ol>
+<li>The links were often relevant, but it wasn’t clear why. More detail surrounding the context around the link is crucial. This could be served by previewing the paragraph on the page where the link occurs, so a reader could dive into the story itself. In short, a simple list wouldn’t be as detailed as a complete graph or more advanced views.</li>
+<li>The topic pages were important hubs, but also noisy and impermanent. Most NYT topic pages feature the most recent stories that have been tagged as such; this works better for a page like “Airbus SAS” than it does for “France.” As such, such an algorithm needs to treat topic pages with more nuance. Considering topic pages as “explainer” pages in their own right, one wonders how they could be improved or customized for a given event or incident.</li>
+</ol>
+<p>Another wrinkle: I returned to the NYT article the next day after a few improvements to the crawler, and found that they had removed a crucial link from the article, one that connected it to the rest of the nodes. So already my data is outdated! This shows the fragility of a link-oriented recommendation scheme as it stands now.</p>
+]]></content:encoded>
+							<wfw:commentRss>https://partnews.mit.edu/2015/03/31/tracing-the-links-of-the-germanwings-disaster/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+							</item>
+		<item>
+		<title>An Object-Based Conversation with Bianca Datta</title>
+		<link>https://partnews.mit.edu/2015/03/04/an-object-based-conversation-with-bianca-datta/</link>
+				<comments>https://partnews.mit.edu/2015/03/04/an-object-based-conversation-with-bianca-datta/#comments</comments>
+				<pubDate>Wed, 04 Mar 2015 05:37:33 +0000</pubDate>
+		<dc:creator><![CDATA[Liam Andrew]]></dc:creator>
+				<category><![CDATA[All]]></category>
+		<category><![CDATA[Classmate Profiles]]></category>
+
+		<guid isPermaLink="false">http://partnews.brownbag.me/?p=6129</guid>
+				<description><![CDATA[Bianca Datta spends a lot of time with objects. We all do, but not like her; she designs them, makes them, thinks about them, and responds to questions from prying interviewers about them. Bianca is a product designer and first-year &#8230; <a href="https://partnews.mit.edu/2015/03/04/an-object-based-conversation-with-bianca-datta/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+								<content:encoded><![CDATA[<p>Bianca Datta spends a lot of time with objects. We all do, but not like her; she designs them, makes them, thinks about them, and responds to questions from prying interviewers about them.</p>
+<p>Bianca is a product designer and first-year graduate student in the MIT Media Lab’s Object-Based Media group. I wanted to learn a bit about her design sense and the ways she relates to objects in particular, so I showed her seven objects that each sparked a conversation about different aspects and stages of her life.</p>
+<p><a href="http://partnews.brownbag.me/wp-content/uploads/2015/03/01-maryland.gif"><img src="http://partnews.brownbag.me/wp-content/uploads/2015/03/01-maryland.gif" alt="01-maryland" width="750" height="410" class="alignnone size-full wp-image-6130" /></a></p>
+<p>I started off easy. Bianca is from Maryland—Montgomery County, not Baltimore, which most people mistakenly assume (or maybe they just don’t know any other cities in Maryland). She explained her home state as a &#8220;microcosm of the US,&#8221; which, looking at the state’s map, she attributed in part to its geography. The peninsula, the panhandle, and the two major metropolitan areas each form their own identity.</p>
+<p><a href="http://partnews.brownbag.me/wp-content/uploads/2015/03/02-penn.jpg"><img src="http://partnews.brownbag.me/wp-content/uploads/2015/03/02-penn.jpg" alt="02-penn" width="400" height="373" class="alignnone size-full wp-image-6131" srcset="https://partnews.mit.edu/wp-content/uploads/2015/03/02-penn.jpg 400w, https://partnews.mit.edu/wp-content/uploads/2015/03/02-penn-300x279.jpg 300w, https://partnews.mit.edu/wp-content/uploads/2015/03/02-penn-321x300.jpg 321w" sizes="(max-width: 400px) 100vw, 400px" /></a></p>
+<p>Bianca then set off to Philadelphia to study at Penn’s School of Engineering. She knew that she wanted her work to have energy applications, and started off focusing on chemical engineering, but later found a home in Penn’s materials science lab as a Materials Science and Engineering major. She claims that chemical engineering didn’t work out because she is &#8220;not into math or physics,&#8221; which befuddled me. It’s all relative.</p>
+<p>Bianca has many Penn mugs (all gifts) and paraphernalia, and when I ask which is her favorite, she ponders for a while: &#8220;that’s really tough. I have so many.&#8221; She settles on a hoodie that she got for being a residential advisor, which she likes not only for the color and comfort, but its associations; it reminds her of home, as well as camaraderie with her fellow RAs.</p>
+<p>The mug itself also had significance: &#8220;I am really big on tea,&#8221; she says (she was late to our meeting because she was getting coffee). She associates tea with her family, and uses it as a way to connect with people; as an RA, she would offer tea to students to encourage them to stay and talk. Nowadays she organizes many of the Media Lab teas.</p>
+<p><a href="http://partnews.brownbag.me/wp-content/uploads/2015/03/03-dormitron.jpg"><img src="http://partnews.brownbag.me/wp-content/uploads/2015/03/03-dormitron-1024x797.jpg" alt="03-dormitron" width="584" height="454" class="alignnone size-large wp-image-6132" srcset="https://partnews.mit.edu/wp-content/uploads/2015/03/03-dormitron-1024x797.jpg 1024w, https://partnews.mit.edu/wp-content/uploads/2015/03/03-dormitron-300x233.jpg 300w, https://partnews.mit.edu/wp-content/uploads/2015/03/03-dormitron-385x300.jpg 385w" sizes="(max-width: 584px) 100vw, 584px" /></a></p>
+<p>At Penn, Bianca took a formative product design class that led her towards her current work. One of the projects in that class was Dormitron, an RFID-operated door, which would replace your dorm’s traditional key with an RFID chip, making your dorm&#8217;s door work like the key card in the campus entrance, or a bit like a hotel room.</p>
+<p>Bianca first downplayed the project by saying &#8220;every year somebody does an RFID thing [for the class],&#8221; and mentioned that there are still barriers to wide adoption due to security liabilities. But she also insisted that her team’s product was better designed than others. Although she regrets not being able to participate in the product’s actual fabrication, it was her first opportunity to go from idea to product.</p>
+<p><a href="http://partnews.brownbag.me/wp-content/uploads/2015/03/05-3m.jpg"><img src="http://partnews.brownbag.me/wp-content/uploads/2015/03/05-3m.jpg" alt="05-3m" width="300" height="400" class="alignnone size-full wp-image-6133" srcset="https://partnews.mit.edu/wp-content/uploads/2015/03/05-3m.jpg 300w, https://partnews.mit.edu/wp-content/uploads/2015/03/05-3m-225x300.jpg 225w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Bianca spent one college summer in Minneapolis working for 3M, which introduced her to the corporate working world as a materials engineer. She was simultaneously impressed with the range of 3M and with their level of trust in her expertise and experience.</p>
+<p>Her summer at 3M convinced her to go to graduate school, maybe to postpone the red tape (or poster tape?) of major corporations, and because she found that the most interesting work at 3M was being done by people with PhDs. It seemed like a good sign.</p>
+<p>Although she was not working on improving 3M’s poster tape, she did have strong opinions: &#8220;I hate command hooks. They’re useless and always fall off the wall.&#8221; She points to 3M as proving that generic products are not all the same; her 3M sticky-notes stayed on longer and left less residue than the non-branded alternatives. Still, she notes, it’s not always worth the added cost.</p>
+<p><a href="http://partnews.brownbag.me/wp-content/uploads/2015/03/06-flip.jpg"><img src="http://partnews.brownbag.me/wp-content/uploads/2015/03/06-flip.jpg" alt="06-flip" width="348" height="350" class="alignnone size-full wp-image-6134" srcset="https://partnews.mit.edu/wp-content/uploads/2015/03/06-flip.jpg 348w, https://partnews.mit.edu/wp-content/uploads/2015/03/06-flip-150x150.jpg 150w, https://partnews.mit.edu/wp-content/uploads/2015/03/06-flip-298x300.jpg 298w" sizes="(max-width: 348px) 100vw, 348px" /></a></p>
+<p>Along with Partnews RA Alexis Hope, Bianca designed a digital input/output device during the famed Media Lab class &#8220;How to Make Almost Anything.&#8221; The project was initially an excuse to try out the Processing programming environment, which allows for interesting visual effects. If you press a button, the background changes; this allowed them to switch between a &#8220;moon&#8221; view and a &#8220;sunrise&#8221; view for the object.</p>
+<p>Bianca&#8217;s final and favorite How to Make project was a nap pod called DUSK, which she tells me currently exists and lives in the Media Lab, so I plan to find it and sleep in it tomorrow. For her the project was exciting because she made it from scratch; it was &#8220;in my head, and now it’s real, and its big, and I get to use it.&#8221;</p>
+<p><a href="http://partnews.brownbag.me/wp-content/uploads/2015/03/07-stuffmatters.jpg"><img src="http://partnews.brownbag.me/wp-content/uploads/2015/03/07-stuffmatters-682x1024.jpg" alt="07-stuffmatters" width="584" height="876" class="alignnone size-large wp-image-6135" srcset="https://partnews.mit.edu/wp-content/uploads/2015/03/07-stuffmatters-682x1024.jpg 682w, https://partnews.mit.edu/wp-content/uploads/2015/03/07-stuffmatters-200x300.jpg 200w, https://partnews.mit.edu/wp-content/uploads/2015/03/07-stuffmatters.jpg 1000w" sizes="(max-width: 584px) 100vw, 584px" /></a></p>
+<p>This book was on Bianca&#8217;s otherwise defunct Goodreads page, so she was surprised that I&#8217;d found it. On one hand Goodreads was just a &#8220;one-off thing&#8221; for her, but on the other, &#8220;this book is all about what I do.&#8221; It is a popular-scientific approach to materials and objects, with successive chapters on cement, paper, grass, and so on. Bianca’s current research examines how human beings relate and connect to materials; for instance, why we view some materials as stable, friendly, and durable, while others are considered foreign or cold. So this book is right up her alley.</p>
+<p>Unsurprisingly, Bianca prefers paper reading over screen reading, which gives off the illusion of being &#8220;less serious.&#8221;  But like most people, she makes plenty of concessions for the sake of digital convenience.</p>
+<p>Bianca read <em>Stuff Matters</em> at Cambridge&#8217;s local <a href="http://www.mos.org/public-events/book-club-for-the-curious">Book Club for the Curious</a>. As a first-year student, she felt like this connected her to the city and community. Whether tea mugs, hoodies, or books, Bianca associates her favorite objects with their social functions and associations. As an expert in things, her favorite things are the ones that connect her to her favorite people.</p>
+]]></content:encoded>
+							<wfw:commentRss>https://partnews.mit.edu/2015/03/04/an-object-based-conversation-with-bianca-datta/feed/</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+							</item>
+		<item>
+		<title>The Muddy cleans up</title>
+		<link>https://partnews.mit.edu/2015/02/24/the-muddy-cleans-up/</link>
+				<comments>https://partnews.mit.edu/2015/02/24/the-muddy-cleans-up/#comments</comments>
+				<pubDate>Tue, 24 Feb 2015 22:42:49 +0000</pubDate>
+		<dc:creator><![CDATA[Liam Andrew]]></dc:creator>
+				<category><![CDATA[Four Hour Challenges]]></category>
+		<category><![CDATA[MIT]]></category>
+		<category><![CDATA[Muddy]]></category>
+		<category><![CDATA[Muddy Charles Pub]]></category>
+
+		<guid isPermaLink="false">http://partnews.brownbag.me/?p=5796</guid>
+				<description><![CDATA[Last Christmas Eve, the graduate students of the Massachusetts Institute of Technology let out a collective cry of despair: Muddy renovations begin. Expect to reopen early February. pic.twitter.com/7R8B24qVQ7 — Muddy Charles Pub (@muddycharlespub) December 24, 2014 The venerable Muddy Charles &#8230; <a href="https://partnews.mit.edu/2015/02/24/the-muddy-cleans-up/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+								<content:encoded><![CDATA[<p>Last Christmas Eve, the graduate students of the Massachusetts Institute of Technology let out a collective cry of despair:</p>
+<blockquote class="twitter-tweet" lang="en"><p>Muddy renovations begin. Expect to reopen early February. <a href="http://t.co/7R8B24qVQ7">pic.twitter.com/7R8B24qVQ7</a></p>
+<p>— Muddy Charles Pub (@muddycharlespub) <a href="https://twitter.com/muddycharlespub/status/547885314715697152">December 24, 2014</a></p></blockquote>
+<p>The venerable Muddy Charles pub has been MIT&#8217;s centrally-located campus bar since 1968. In a graduate scene where everything can seem a little stratified, the Muddy brings together the chemists and the math-heads, the Media Labbers and the Sloanies. The dark walls and carpet gave off a comfortably drab and unpretentious vibe. In a 2011 <a href="http://www.technologyreview.com/article/426410/a-physicist-walks-into-a-bar/">article in the <em>MIT Technology Review</em></a>, Kenrick Vazina put it succinctly: &#8220;On a campus dominated by cold concrete and hard science, the Muddy Charles pub exudes warmth.&#8221;</p>
+<p>So the temporary closing of the Muddy was not only perturbing for temporary reasons (where would we get our $6 pitchers of High Life?)&#8211; the idea of a renovation threatened the tired charm of the place. A bright Muddy with a new floor would be, well, not muddy at all.</p>
+<p>The new Muddy was unveiled at some point last week, to evidently little fanfare (&#8220;Last&#8230;Tuesday, I think?&#8221; says the bartender). Although the bartenders report high turnout despite the snow, its <a href="https://www.facebook.com/groups/10483421782/">Facebook</a> and <a href="http://twitter.com/muddycharlespub">Twitter</a> accounts remain dormant. While a few super-secret email lists were abuzz with excitement at the reopening, few were discussing the renovation. To gauge the reactions of Muddy stalwarts and regulars, I decided to post up at the place for an afternoon with the ultimate peace offering: a pitcher of High Life.</p>
+<p><a href="http://partnews.brownbag.me/wp-content/uploads/2015/02/IMG_2935.jpg"><img src="http://partnews.brownbag.me/wp-content/uploads/2015/02/IMG_2935-768x1024.jpg" alt="IMG_2935" width="584" height="778" class="alignnone size-large wp-image-5837" srcset="https://partnews.mit.edu/wp-content/uploads/2015/02/IMG_2935-768x1024.jpg 768w, https://partnews.mit.edu/wp-content/uploads/2015/02/IMG_2935-225x300.jpg 225w" sizes="(max-width: 584px) 100vw, 584px" /></a><br />
+<em>The entrance to the renovated Muddy Charles pub.</em></p>
+<p>When I arrived, I found a photographer snapping pictures of the bar, and the alliteratively-named Mike the (Muddy) Manager posing. I&#8217;d been scooped! Fortunately, I soon learned that it was for promo photos rather than another Tech article. The Muddy was indeed looking to promote, even if its social media implied otherwise. In the meantime, yet another hopeful message popped up on Twitter, from a student who was still unaware that it has been open: <a href="https://twitter.com/viccypont/status/570308061430210562">&#8220;Any update on this?&#8221;</a></p>
+<p><a href="http://partnews.brownbag.me/wp-content/uploads/2015/02/IMG_2937.jpg"><img src="http://partnews.brownbag.me/wp-content/uploads/2015/02/IMG_2937-768x1024.jpg" alt="IMG_2937" width="584" height="778" class="alignnone size-large wp-image-5859" srcset="https://partnews.mit.edu/wp-content/uploads/2015/02/IMG_2937-768x1024.jpg 768w, https://partnews.mit.edu/wp-content/uploads/2015/02/IMG_2937-225x300.jpg 225w" sizes="(max-width: 584px) 100vw, 584px" /></a><br />
+<em>Floor not included.</em></p>
+<p>Two students were chatting over a beer and discussing chemistry (the science kind), but soon left. A few others arrived: some curiously asked whether it was officially open again and then left; others asked and then stayed; still others were friends of the bartender. At no point before 4pm were there more than 6 people present. Given the Muddy&#8217;s famous warmth, it was strangely cold.</p>
+<p><a href="http://partnews.brownbag.me/wp-content/uploads/2015/02/IMG_29361.jpg"><img src="http://partnews.brownbag.me/wp-content/uploads/2015/02/IMG_29361-768x1024.jpg" alt="IMG_2936" width="584" height="778" class="alignnone size-large wp-image-5836" srcset="https://partnews.mit.edu/wp-content/uploads/2015/02/IMG_29361-768x1024.jpg 768w, https://partnews.mit.edu/wp-content/uploads/2015/02/IMG_29361-225x300.jpg 225w, https://partnews.mit.edu/wp-content/uploads/2015/02/IMG_29361.jpg 960w" sizes="(max-width: 584px) 100vw, 584px" /></a><br />
+<em>Me in front of everyone&#8217;s two favorite words.</em></p>
+<p>My <strong>&#8220;FREE BEER!&#8221;</strong> sign drew attention from Mike the Manager, who asked me to remove it because free beer is, apparently, illegal under Massachusetts state law. No appeals to &#8220;but I&#8217;m paying for it!&#8221; or &#8220;but those two words are beautiful together!&#8221; could sway him, and my strategy for enticing conversation was foiled. I&#8217;d also earned the ire of the manager, a potential source. Moreover, I had to drink this pitcher myself.</p>
+<p>At 4pm the tables began to fill up. Some friends of the bartender came in, and we asked, &#8220;What do you think?&#8221;</p>
+<p>&#8220;&#8230;I like the walls.&#8221;</p>
+<p>&#8220;That was sincere.&#8221;</p>
+<p>&#8220;No, I do like the walls! I&#8217;m just not sure about the floor.&#8221;</p>
+<p>The reception to the new look was lukewarm. The maroon, yellow, and white walls were offputting to several, though one Muddy denizen appreciated the MIT shade of maroon. Still, another remarked &#8220;It&#8217;s not quite where I thought they would go. I expected something a little more dark.&#8221; A few people missed the dinginess.</p>
+<p>&#8220;It looks like a Burger King,&#8221; muttered one friend who joined me.</p>
+<p>Other reactions were more positive. One Muddy regular appreciated the light tones and the welcoming nature of the front foyer. &#8220;It&#8217;s easier to navigate the space,&#8221; she said. She also pointed out the new power outlets circling the space, which will give more afternoon regulars the chance to &#8220;study at the Muddy.&#8221;</p>
+<p>The Muddy was almost not in this position to renovate in the first place. In 2010-11, MIT&#8217;s higher-ups considered a renovation of the Walker Memorial building, which houses the Muddy along with an event room, student clubs, and a top-floor gym. The plan was to turn it into a dedicated Music and Theatre Arts building, and it was unclear whether the Muddy would be invited to return. The Muddy could move, but its central location &#8212; in between the science and business hubs of MIT &#8212; is crucial to its identity and success, as attested to by Muddy fixture Joost Bonsen, who regularly holds &#8220;office hours&#8221; for his Media Ventures class at the pub, and turns his table into a serendipitous meet-and-greet for scientists and entrepreneurs.</p>
+<p>Fortunately for the Muddy, the Walker renovation plans were postponed, and this Muddy renovation seems to signify that it&#8217;s here to stay, for the time being. Whatever your feelings on the renovation style, this is undoubtedly a reason to celebrate (with a pitcher of High Life).</p>
+<p><em>Started, completed, and fueled by the Muddy Charles Pub, Tuesday, February 24, 2:15pm-6pm</em></p>
+]]></content:encoded>
+							<wfw:commentRss>https://partnews.mit.edu/2015/02/24/the-muddy-cleans-up/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+							</item>
+		<item>
+		<title>A week in the clickhole</title>
+		<link>https://partnews.mit.edu/2015/02/16/a-week-in-the-clickhole/</link>
+				<comments>https://partnews.mit.edu/2015/02/16/a-week-in-the-clickhole/#comments</comments>
+				<pubDate>Mon, 16 Feb 2015 17:05:47 +0000</pubDate>
+		<dc:creator><![CDATA[Liam Andrew]]></dc:creator>
+				<category><![CDATA[Media Diaries]]></category>
+
+		<guid isPermaLink="false">http://partnews.brownbag.me/?p=5270</guid>
+				<description><![CDATA[Publishers and advertisers are after our attention, but they can’t decide how to measure it. Clicks still hold sway, but recently there has been a focus on “attention minutes” — which, as far as I can tell, is marketing-speak for “time &#8230; <a href="https://partnews.mit.edu/2015/02/16/a-week-in-the-clickhole/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+								<content:encoded><![CDATA[<p>Publishers and advertisers are after our attention, but they can’t decide how to measure it. Clicks still hold sway, but recently there has been a focus on “attention minutes” — which, as far as I can tell, is marketing-speak for “time spent” — as a more nuanced and realistic measurement of a reader’s engagement. Champions of attention minutes claim that it is a win for both advertisers and readers, who will have a better idea of impact and incentives for more engaging content.</p>
+<p>I&#8217;m skeptical because attention minutes still require a click in the first place, and headlines still battle for attention. I&#8217;ve been curious about how clicks and minutes compare to one another. If they match up perfectly, what makes attention minutes any different as a success metric? If they don’t match up, do my attention minutes seem like a better representation of my online engagement for the week?</p>
+<h1>Process</h1>
+<p>I started by trying to manually collect data on mundane and repetitive digital events like receiving new notifications, opening blank browser tabs, and absentmindedly checking my phone. These turned out to be really hard to record. I found myself changing my habits, and getting distracted by the act of writing it down. Measurement bias was coupled with measurement fatigue, and I would often forget or not have time to write things down.</p>
+<p>I opted for more automated tracking methods. For the week of <strong>February 8 to February 14</strong>, I tracked my clicks using Chrome&#8217;s History, and my time spent online (my attention minutes) using RescueTime. In order to limit measurement bias, I avoided looking closely at the data until the end of the week. I didn&#8217;t track my phone use, but I tend to use my phone for emails, texts, and games rather than web activities.</p>
+<h1>Tracking clicks</h1>
+<p>Chrome stores the last 3 weeks of its history locally in a SQLite database, which made it easy to retrieve my click data for the week, though it took a little query magic to limit it to the week in question.</p>
+<p>I hit <strong>4639 webpages</strong> over the course of the week, over <strong>650 pages a day</strong>. This consisted of <strong>1847 different websites</strong> — meaning I went to a single page 2.5 times on average.</p>
+<p>I extracted the top-level domain from each visited URL using the <a href="https://github.com/john-kurkowski/tldextract">tldextract</a> python library, and found that I’d visited pages at <strong>233 different domains</strong>. The breakdown of domains was as follows:</p>
+<p><a href="http://partnews.brownbag.me/wp-content/uploads/2015/02/Screen-Shot-2015-02-16-at-10.56.30.png"><img class="alignnone size-full wp-image-5275" alt="Screen Shot 2015-02-16 at 10.56.30" src="http://partnews.brownbag.me/wp-content/uploads/2015/02/Screen-Shot-2015-02-16-at-10.56.30.png" width="948" height="731" srcset="https://partnews.mit.edu/wp-content/uploads/2015/02/Screen-Shot-2015-02-16-at-10.56.30.png 948w, https://partnews.mit.edu/wp-content/uploads/2015/02/Screen-Shot-2015-02-16-at-10.56.30-300x231.png 300w, https://partnews.mit.edu/wp-content/uploads/2015/02/Screen-Shot-2015-02-16-at-10.56.30-389x300.png 389w" sizes="(max-width: 948px) 100vw, 948px" /></a><br />
+<em><a href="https://www.google.com/fusiontables/embedviz?containerId=googft-gviz-canvas&amp;q=select+col0%2C+SUM(col1)+from+1ZSJ17MvhAod7KCLfFjWU6DCuhP0_1Uu7dcQIlpQM+where+col1+%3E%3D+50+and+col1+%3C%3D+1315+group+by+col0+order+by+col0+asc+limit+10&amp;viz=GVIZ&amp;t=PIE&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_useFirstColumnAsDomain=true&amp;gco_is3D=false&amp;gco_pieHole=0&amp;gco_booleanRole=certainty&amp;gco_colors=%5B%22%233366CC%22%2C%22%23DC3912%22%2C%22%23FF9900%22%2C%22%23109618%22%2C%22%23990099%22%2C%22%230099C6%22%2C%22%23DD4477%22%2C%22%2366AA00%22%2C%22%23B82E2E%22%2C%22%23316395%22%2C%22%23994499%22%2C%22%2322AA99%22%2C%22%23AAAA11%22%2C%22%236633CC%22%2C%22%23E67300%22%2C%22%238B0707%22%2C%22%23651067%22%2C%22%23329262%22%2C%22%235574A6%22%2C%22%233B3EAC%22%2C%22%23B77322%22%2C%22%2316D620%22%2C%22%23B91383%22%2C%22%23F4359E%22%2C%22%239C5935%22%2C%22%23A9C413%22%2C%22%232A778D%22%2C%22%23668D1C%22%2C%22%23BEA413%22%2C%22%230C5922%22%2C%22%23743411%22%5D&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D&amp;gco_vAxes=%5B%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D%2C%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D%5D&amp;gco_legend=right&amp;gco_title=%25+of+total+sites+visited+(top+10)&amp;gco_backgroundColor=%7B%22fill%22%3A%22%23ffffff%22%7D&amp;gco_theme=maximized&amp;width=500&amp;height=300">Fusion Tables Source</a></em></p>
+<p>I visited Google more than domains #8-233 combined. The fact that I’m using Chrome’s history and visualizing it on Fusion Tables only drives home the point: for me, half of using the internet = using Google.</p>
+<p>But I was also a bit surprised by some of my click data here; five of my top seven most-visited pages were Google pages, and three of them were Google Docs.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Domain</strong></td>
+<td><strong>Title</strong></td>
+<td><strong>URL</strong></td>
+<td><strong>Hits</strong></td>
+</tr>
+<tr>
+<td>google</td>
+<td>MW2015 Paper &#8211; Google Docs</td>
+<td>https://docs.google.com/document/d/1Tr8K&#8230;</td>
+<td>291</td>
+</tr>
+<tr>
+<td>google</td>
+<td></td>
+<td>https://docs.google.com/document/d/1o-oL&#8230;</td>
+<td>155</td>
+</tr>
+<tr>
+<td>google</td>
+<td>Google</td>
+<td>https://www.google.com/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;ie=UTF-8</td>
+<td>137</td>
+</tr>
+<tr>
+<td>twitter</td>
+<td>Twitter</td>
+<td>https://twitter.com/</td>
+<td>72</td>
+</tr>
+<tr>
+<td>facebook</td>
+<td>(2) Facebook</td>
+<td>https://www.facebook.com/</td>
+<td>52</td>
+</tr>
+<tr>
+<td>google</td>
+<td>Inbox (25) &#8211; liam.p.andrew@gmail.com &#8211; Gmail</td>
+<td>https://mail.google.com/mail/u/0/#inbox</td>
+<td>39</td>
+</tr>
+<tr>
+<td>google</td>
+<td></td>
+<td>https://docs.google.com/document/d/1bnMq&#8230;</td>
+<td>32</td>
+</tr>
+<tr>
+<td height="15">twitter</td>
+<td>Liam Andrew (@mailbackwards) | Twitter</td>
+<td>https://twitter.com/mailbackwards</td>
+<td>29</td>
+</tr>
+<tr>
+<td>mit</td>
+<td>MIT Libraries</td>
+<td>http://libraries.mit.edu/</td>
+<td>20</td>
+</tr>
+<tr>
+<td>oclc</td>
+<td>Main Menu: ILLiad &#8212; MIT Libraries</td>
+<td>https://mit.illiad.oclc.org/illiad/illiad.dll</td>
+<td>18</td>
+</tr>
+</tbody>
+</table>
+<p>I was collaborating on a few projects and papers in Docs this week, but I don’t think I hit these pages hundreds of times. A one-page handout that I prepared for a class was apparently visited 155 times, even though I opened and closed it within an hour. Is Google automatically refreshing these pages, treating them as link visits? This would throw off my results immensely. This also made me think about what counts as a &#8220;visit&#8221; to Facebook or Twitter. Clicks might work for publishers, but they are less well defined for platforms and applications.</p>
+<p>I also noticed a domain simply called &#8220;t&#8221; that had 40 overall clicks; this turned out to be the &#8220;t.co&#8221; link-shortening mechanism on Twitter. It was interesting to discover that I’d clicked on 40 Twitter links this week, but I wondered whether it was tracking the final destination too. Does a &#8220;visit&#8221; include redirects? I&#8217;d need to investigate how Chrome stores its history.</p>
+<p>Chrome does store detailed metadata about each individual visit (e.g. did you arrive via a link from another page? a bookmark? manually typed into the address box?), so an examination of this data would allow for a glimpse into what Chrome History is storing, as well as offering a deeper dive into my interactions with specific sites. I wonder, for instance, if advertisers should be more interested in sites that users are likely to manually type into an address box, rather than arriving from email or Facebook.</p>
+<h1>Tracking minutes</h1>
+<p>I tracked my time for the week using <a href="https://www.rescuetime.com/">RescueTime</a>. I first threw out any non-internet usage, which turned out to be <strong>47% of my total computing time</strong> (primarily Mail, Acrobat, and Evernote). Some of these differences felt arbitrary; I might decide to download a PDF rather than read it on the web, or start a cover letter in Evernote rather than a Google doc, and these decisions would affect hours of my time.</p>
+<p>This left me with <strong>31 hours logged online</strong>, though it&#8217;s safe to say I wasn&#8217;t paying attention to my computer this whole time. RescueTime thinks I spent 1 hour browsing &#8220;newtab&#8221; this week, when in fact I was probably distracted by the real world.</p>
+<p>A pie chart felt appropriate as a representation of my attention, with advertisers fighting over slices:</p>
+<p><a href="http://partnews.brownbag.me/wp-content/uploads/2015/02/Screen-Shot-2015-02-16-at-10.52.56.png"><img class="alignnone size-large wp-image-5274" alt="Screen Shot 2015-02-16 at 10.52.56" src="http://partnews.brownbag.me/wp-content/uploads/2015/02/Screen-Shot-2015-02-16-at-10.52.56-1024x717.png" width="584" height="408" srcset="https://partnews.mit.edu/wp-content/uploads/2015/02/Screen-Shot-2015-02-16-at-10.52.56-1024x717.png 1024w, https://partnews.mit.edu/wp-content/uploads/2015/02/Screen-Shot-2015-02-16-at-10.52.56-300x210.png 300w, https://partnews.mit.edu/wp-content/uploads/2015/02/Screen-Shot-2015-02-16-at-10.52.56-428x300.png 428w, https://partnews.mit.edu/wp-content/uploads/2015/02/Screen-Shot-2015-02-16-at-10.52.56.png 1045w" sizes="(max-width: 584px) 100vw, 584px" /></a><br />
+<em><a href="https://www.google.com/fusiontables/embedviz?containerId=googft-gviz-canvas&amp;q=select+col0%2C+col1+from+1u_v78sCQ2qLWqvN8bkYnnQv8rzEZMlfzwyLwS3mx+order+by+col1+asc+limit+10&amp;viz=GVIZ&amp;t=PIE&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_useFirstColumnAsDomain=true&amp;gco_is3D=false&amp;gco_pieHole=0&amp;gco_booleanRole=certainty&amp;gco_colors=%5B%22%233366CC%22%2C%22%23DC3912%22%2C%22%23FF9900%22%2C%22%23109618%22%2C%22%23990099%22%2C%22%230099C6%22%2C%22%23DD4477%22%2C%22%2366AA00%22%2C%22%23B82E2E%22%2C%22%23316395%22%2C%22%23994499%22%2C%22%2322AA99%22%2C%22%23AAAA11%22%2C%22%236633CC%22%2C%22%23E67300%22%2C%22%238B0707%22%2C%22%23651067%22%2C%22%23329262%22%2C%22%235574A6%22%2C%22%233B3EAC%22%2C%22%23B77322%22%2C%22%2316D620%22%2C%22%23B91383%22%2C%22%23F4359E%22%2C%22%239C5935%22%2C%22%23A9C413%22%2C%22%232A778D%22%2C%22%23668D1C%22%2C%22%23BEA413%22%2C%22%230C5922%22%2C%22%23743411%22%5D&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D&amp;gco_vAxes=%5B%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D%2C%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D%5D&amp;gco_title=%25+of+total+time+online&amp;gco_theme=maximized&amp;gco_legend=right&amp;width=500&amp;height=300">Fusion Tables source</a></em></p>
+<p>I had to consolidate a number of rows to get data consistent with the click data, but when I did, I found that <strong>7.5 hours</strong> — about <strong>25% of my total online time</strong> — was on some Google app or another (3:17 on Google Docs). The next three were the New York Times (2:12), Facebook, (1:40), and Twitter (1:14).</p>
+<p>The two charts look similar, with some of the same characters and similar breakdowns, but there are a few differences. Attention minutes benefit the New York Times, while Google and MIT fall to a smaller share of the pie. Another interesting data point here is Wired, which only got one click all week, but 55 minutes of my attention (I believe I was lost in some court transcripts in the Dread Pirate Roberts case&#8230;a true attention hole). Wired wins out when measuring in this way&#8230;possibly more than it should.</p>
+<p>My attention minutes look a bit more balanced than my clicks, but it still follows a sort of power-law distribution, with the majority of my time on just a few sites (my top 10 accounted for more than 50% of my total viewing time) and a long tail of sites that I only spent a few seconds on:</p>
+<p><a href="http://partnews.brownbag.me/wp-content/uploads/2015/02/Screen-Shot-2015-02-16-at-11.17.24.png"><img class="alignnone size-large wp-image-5279" alt="Screen Shot 2015-02-16 at 11.17.24" src="http://partnews.brownbag.me/wp-content/uploads/2015/02/Screen-Shot-2015-02-16-at-11.17.24-1024x365.png" width="584" height="208" srcset="https://partnews.mit.edu/wp-content/uploads/2015/02/Screen-Shot-2015-02-16-at-11.17.24-1024x365.png 1024w, https://partnews.mit.edu/wp-content/uploads/2015/02/Screen-Shot-2015-02-16-at-11.17.24-300x107.png 300w, https://partnews.mit.edu/wp-content/uploads/2015/02/Screen-Shot-2015-02-16-at-11.17.24-500x178.png 500w" sizes="(max-width: 584px) 100vw, 584px" /></a><br />
+<em><a href="https://www.google.com/fusiontables/embedviz?containerId=googft-gviz-canvas&amp;q=select+col0%2C+col1+from+1sYfD6Mz2pOl2L1FpVESeR-eZ18tEb--Wgfbzfmni+order+by+col0+desc&amp;viz=GVIZ&amp;t=AREA&amp;rmax=250&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_vAxes=%5B%7B%22title%22%3Anull%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%7D%2C%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D%5D&amp;gco_useFirstColumnAsDomain=true&amp;gco_isStacked=false&amp;gco_booleanRole=certainty&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D&amp;gco_legend=right&amp;gco_title=Distribution+of+time+spent+on+websites&amp;gco_tooltip=%7B%22isHtml%22%3Atrue%7D&amp;tmplt=3&amp;width=500&amp;height=300">Fusion Tables source</a></em></p>
+<p>I found that the few-seconds sites were the ones I used for quick facts and reference, while I spent more time on sites with full stories and articles. This seems to benefit publishers, but it actually might be a good goal for information and reference sites to <em>reduce</em> time spent on the site.</p>
+<h1>Combining the two</h1>
+<p>If we assume that both the click and time data are good and interchangeable (neither of which is necessarily true), then I spend an average of <strong>23.19 seconds on any given website</strong>. Publishers like the New York Times and Wired win out when I measure minutes, while libraries and information providers like MIT and Google are more geared towards clicks.</p>
+<p>Clicks and minutes both follow power laws, and generally feature similar sites at the top of both. There is a lot of correlation. Time spent may or may not be a slightly more balanced view of my online habits, but it brings its own skews. In the end, the most balanced representation of my week online probably sits somewhere in between these two metrics.</p>
+]]></content:encoded>
+							<wfw:commentRss>https://partnews.mit.edu/2015/02/16/a-week-in-the-clickhole/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+	</channel>
+</rss>

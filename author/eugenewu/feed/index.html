@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Eugene Wu &#8211; Future of News and Participatory Media</title>
+	<atom:link href="https://partnews.mit.edu/author/eugenewu/feed/" rel="self" type="application/rss+xml" />
+	<link>https://partnews.mit.edu</link>
+	<description>Treating newsgathering as an engineering problem... since 2012!</description>
+	<lastBuildDate>Tue, 28 Jan 2014 16:25:20 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2</generator>
+	<item>
+		<title>EasyData</title>
+		<link>https://partnews.mit.edu/2012/05/23/easydata/</link>
+				<pubDate>Wed, 23 May 2012 04:09:50 +0000</pubDate>
+		<dc:creator><![CDATA[Eugene Wu]]></dc:creator>
+				<category><![CDATA[All]]></category>
+		<category><![CDATA[Final Projects]]></category>
+
+		<guid isPermaLink="false">http://partnews.brownbag.me/?p=1479</guid>
+				<description><![CDATA[EasyData A tool to automatically geocode and analyze location based data As state and national level government agencies continue to make community related data available online (mass.gov/data, NY community health data), it brings the exciting opportunity to look for rich &#8230; <a href="https://partnews.mit.edu/2012/05/23/easydata/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+								<content:encoded><![CDATA[<h1>EasyData</h1>
+<h2>A tool to automatically geocode and analyze location based data</h2>
+<p>As state and national level government agencies continue to make community related data available online (<a href="http://www.mass.gov/portal/government-taxes/open/open-data.html">mass.gov/data</a>, <a href="http://www.health.ny.gov/statistics/chac/chds.htm#phys">NY community health data</a>), it brings the exciting opportunity to look for rich information between the datasets.</p>
+<p>For example, one datasets may contain low birth rates across counties in new york, while another dataset may contain youth pregnancy data. Exploring correlations between the two datasets is an important first step towards uncovering the next big scoop (or interesting facts!).</p>
+<p>Throughout the semester, I identified three hurdles that make these types of analyses difficult.</p>
+<ol>
+<li><strong>Data import</strong>: Simply getting data into a program you’re comfortable with is hard. The data may be stored in JSON, or displayed as an HTML table on a website. Government datasets often come as hundreds of files in a zipfile.</li>
+<li><strong>Extracting location information</strong>: Many datasets are very difficult to deal with because the statistics (e.g., low birth rates) are assigned to communities, cities, counties, or states. One dataset may report birth rates by county, while another reports then by zip code. We can only look between them by knowing how to equate zip codes with county names.</li>
+<li><strong>Looking for patterns</strong>: Managing even 5 different datasets can quickly be unwieldy.</li>
+</ol>
+<p><a href="http://dbtruck.csail.mit.edu">EasyData</a> is a prototype to make each of these three steps less cumbersome. It tries to automate each of these three steps as much as possible.</p>
+<h2>Easy Data Import</h2>
+<p>EasyData will do a <em>good enough</em> job of importing your data. If the data contains headers (e.g., “birth_rate”, “county_name”), it will try to identify them. If the data has errors, it will ignore them.</p>
+<h2>Automatic Geocoding</h2>
+<p>EasyData will try to analyze your data to see if any of the columns are zipcodes, state names, addresses, or latitude longitude coordinates. If it thinks it sees an address and a state name, it will try to automatically geocode the table. Otherwise, you can tell EasyData which columns to geocode and it will do the rest.</p>
+<h2>Automatic Correlation Search</h2>
+<p>Once your data hase been geocoded, EasyData will combine the statistics of data that references the same location (e.g., downtown boston), and see if there are any interesting trends. It will plot the most interesting trends.</p>
+<p>Interested? <a href="http://dbtruck.csail.mit.edu">Try it out</a>!</p>
+<p>(It’s a prototype so may be really slow if multiple people are using it.)</p>
+<p>Here&#8217;s a screenshot so you know its real.</p>
+<p><a href="http://partnews.brownbag.me/2012/05/23/easydata/screen/" rel="attachment wp-att-1481"><img class="alignnone  wp-image-1481" src="http://partnews.brownbag.me/wp-content/uploads/2012/05/screen-1024x606.png" alt="" width="1024" height="606" srcset="https://partnews.mit.edu/wp-content/uploads/2012/05/screen-1024x606.png 1024w, https://partnews.mit.edu/wp-content/uploads/2012/05/screen-300x177.png 300w, https://partnews.mit.edu/wp-content/uploads/2012/05/screen-500x295.png 500w, https://partnews.mit.edu/wp-content/uploads/2012/05/screen.png 1318w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></p>
+<p>&nbsp;</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Explain That!</title>
+		<link>https://partnews.mit.edu/2012/04/04/explain-that/</link>
+				<pubDate>Wed, 04 Apr 2012 03:12:08 +0000</pubDate>
+		<dc:creator><![CDATA[Eugene Wu]]></dc:creator>
+				<category><![CDATA[All]]></category>
+		<category><![CDATA[Explainers]]></category>
+
+		<guid isPermaLink="false">http://partnews.brownbag.me/?p=530</guid>
+				<description><![CDATA[I needed javascript for my post so click me to see it]]></description>
+								<content:encoded><![CDATA[<p><a href="http://scripts.mit.edu/~eugenewu/wp/archives/349" title="click me!">I needed javascript for my post so click me to see it</a></p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Fact Checking a Technique</title>
+		<link>https://partnews.mit.edu/2012/03/14/fact-checking-a-technique/</link>
+				<comments>https://partnews.mit.edu/2012/03/14/fact-checking-a-technique/#comments</comments>
+				<pubDate>Wed, 14 Mar 2012 19:07:35 +0000</pubDate>
+		<dc:creator><![CDATA[Eugene Wu]]></dc:creator>
+				<category><![CDATA[All]]></category>
+		<category><![CDATA[Fact-checking Assignments]]></category>
+
+		<guid isPermaLink="false">http://partnews.brownbag.me/?p=438</guid>
+				<description><![CDATA[Felipe Andres Coronel, better known as Immortal Technique, is a popular underground rapper of Afro-Peruvian whose rap lyrics focus on controversial issues such as class imbalance, racial inequality, institutional oppression. Unfortunately, many people consider many of Immortal Technique&#8217;s lyrics as &#8230; <a href="https://partnews.mit.edu/2012/03/14/fact-checking-a-technique/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+								<content:encoded><![CDATA[<p>Felipe Andres Coronel, better known as Immortal Technique, is a popular underground rapper of Afro-Peruvian whose rap lyrics focus on controversial issues such as class imbalance, racial inequality, institutional oppression.  Unfortunately, many people consider many of Immortal Technique&rsquo;s lyrics as conspiracy theories and the antics of a wild man.  In response he lucidly argues that his lyrics are simply &ldquo;the truth&rdquo;, and the truth is often seen as revolutionary.</p>
+<p>In his own words</p>
+<pre><code>I give niggaz the truth, cause they pride is indigent
+</code></pre>
+<p>On March 17, 2012, Immortal Technique will take the stage in Boston&rsquo;s Paradise Rock Club.  As a fan of Mr. Coronel&rsquo;s lyrical prowress and a budding journalist, I will naturally attend the concert and listen to his thoughts on current issues.  I find it valuable to perform a cursory factual assessment of his lyrics.  To do this, I picked his verses from the song Young Lords from his most recent album, The Martyr:</p>
+<p><a href="http://grooveshark.com/s/Young+Lords/4fsKnH?src=5">Enjoy the song on Grooveshark!</a></p>
+<pre><code>I survived the cointelpro assassinations.
+AIDS epidemic, Crack era, fractured a nation,
+The Interpretation of American Democracy,
+Is best exemplified in it's foreign policy dichotomy,
+I live a double life of political philosophy,
+But revolution follows me, the struggle for equality,
+Against the morally bankrupt claiming to be born again,
+It's a civil war again like MS-13s origin
+Ban ethnic studies claiming our culture will swallow them,
+But you can't conquer people and build a country on top of them,
+And then feel offended that they breathe the same oxygen,
+Your family values lack the wisdom of Solomon,
+But Operation Condor and Operation Bootstrap are Polisci 101,
+Research for the new jack,
+It's hard to reach Communist Utopia tomorrow,
+When your hands are in a fuckin glass jar like Che Guevara,
+Forget the distorted historical facts you were given,
+Slave trade was the capital for capitalism,
+Trapped in a prison mentally, dying existentially,
+Separated from people you can't see yourself to be,
+Then racially integrated into a burning house colony of an empire,
+Economically burning out,
+Can't win a debate so they sponsor every threat to me,
+I wonder if agent 800 is standing next to me!    
+</code></pre>
+<p>Let&rsquo;s go through the first half.</p>
+<p><strong>COINTEL assassinations</strong>:  <a href="http://en.wikipedia.org/wiki/COINTELPRO">COINTELPRO</a> were a series of declassified, covert and illegal projects to remove power from domestic policital organizations, such as the KKK and Black Panthers.  <a href="http://www.icdc.com/~paulwolf/cointelpro/churchfinalreportIIca.htm">The summary report</a> by the Senate acknowledges that &ldquo;<em>… the domestic activities of the intelligence community at times violated specific statutory prohibitions and infringed the constitutional rights of American citizens.</em>&rdquo;  However, the projects were active between 1956 to 1971, and are unlikely to have directly affected Felipe (born 1978).</p>
+<p><strong>The Interpretation of American Democracy / Is best exemplified in it&rsquo;s foreign policy dichotomy</strong>: The US government&rsquo;s foreign policy has often been <a href="http://community.seattletimes.nwsource.com/archive/?date=19910530&amp;slug=1286113">called a dichotomy</a> &ndash; for example, when the government calls to reduce weapons in the Middle East while supplying tanks to countries in the Gulf.  Similarly, while the United States is called the &ldquo;greatest democracy on the planet&rdquo;, controversies such as the financial institutions&#8217; <a href="http://articles.businessinsider.com/2010-12-15/wall_street/30066825_1_tarp-loan-financial-firms-goldman-sachs">ties with the Federal Reserve</a>, and the <a href="http://en.wikipedia.org/wiki/99_percent#Precedents_for_.22the_wealthiest_1.25.22_and_.22the_99_percent.22">1%</a>.</p>
+<p><strong>Civil war like MS-13s origin</strong>: MS-13 is an L.A.-Mexican gang notorious for their excessive cruelty.  It originated as a group to protect Salvadoran immigrants, fleeing civil war in their home country, from existing, well establish Mexican gangs in the area, despite both sides being immigant populations living in the same region.  Stepping back, we can see that much of the news in the past several months have focused on <a href="http://images1.dailykos.com/i/user/6685/inequality2.jpg">income disparities</a> and the resulting unrest.  Comparing current events to a civil war between a militant government and a guerrilla coalition is certainly an overstatement.</p>
+<p>Based on an admittedly small sample set, the relationships that Technique weaves between (factually accurate) historical events to current events and himself are tenuous at best.  This is an instance where the individual facts are correct but the contextual information is &ldquo;pants on fire&rdquo;.</p>
+<p>To perform the fact checking I used a combination of RapGenious (not a very good source), Wikipedia, and old fashioned Google searches.</p>
+]]></content:encoded>
+							<wfw:commentRss>https://partnews.mit.edu/2012/03/14/fact-checking-a-technique/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+		<item>
+		<title>Assignment #3: the story of Arlduc</title>
+		<link>https://partnews.mit.edu/2012/02/29/249/</link>
+				<comments>https://partnews.mit.edu/2012/02/29/249/#comments</comments>
+				<pubDate>Wed, 29 Feb 2012 05:00:15 +0000</pubDate>
+		<dc:creator><![CDATA[Eugene Wu]]></dc:creator>
+				<category><![CDATA[All]]></category>
+		<category><![CDATA[Classmate Profiles]]></category>
+
+		<guid isPermaLink="false">http://partnews.brownbag.me/?p=249</guid>
+				<description><![CDATA[Click me to read the story!]]></description>
+								<content:encoded><![CDATA[<div><img width="600" src="http://web.mit.edu/~eugenewu/www/ducao/panel1.png" alt="" /></div>
+<div style="width:600;text-align:center;font-family:garamond;font-size: 15pt;margin-bottom: 10px">
+<a href="http://web.mit.edu/~eugenewu/www/ducao/ducao.html">Click me to read the story!</a>
+</div>
+]]></content:encoded>
+							<wfw:commentRss>https://partnews.mit.edu/2012/02/29/249/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+							</item>
+		<item>
+		<title>SuperPACs</title>
+		<link>https://partnews.mit.edu/2012/02/22/superpacs/</link>
+				<comments>https://partnews.mit.edu/2012/02/22/superpacs/#comments</comments>
+				<pubDate>Wed, 22 Feb 2012 19:28:10 +0000</pubDate>
+		<dc:creator><![CDATA[Eugene Wu]]></dc:creator>
+				<category><![CDATA[All]]></category>
+		<category><![CDATA[Four Hour Challenges]]></category>
+		<category><![CDATA[assignment #2]]></category>
+
+		<guid isPermaLink="false">http://partnews.brownbag.me/?p=147</guid>
+				<description><![CDATA[The key principles that must be followed in any election is that a large portion of the voters participate in the process, and that there is a lack of corruption. The 2012 Presidential Election has become a major turning point &#8230; <a href="https://partnews.mit.edu/2012/02/22/superpacs/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+								<content:encoded><![CDATA[<p>The key principles that must be followed in any election is that a large portion of the voters participate in the process, and that there is a lack of corruption. The 2012 Presidential Election has become a major turning point in the United States&#8217; election process, in that both principles have disappeared from the radar. Despite the efforts of organizations such as <a href="http://www.rockthevote.com">rock the vote</a>, voter apathy has only increased since the last election. When interviewed, many cited a lack of faith in the political system and the amount of corruption.</p>
+<p>These complaints stem from the second change &#8212; the unprecedented emphasis on money. Money has always been a part of the process. Many experts argue that Obama won the 2008 election by spending a record shattering $700 million on his campaign, as opposed to McCain&#8217;s $100 million. Despite the campaign funding, here was still a limit on how much an individual could donate to a candidate. However, the birth of a new player &#8212; the SuperPAC &#8212; is poised to change completely change the election process by giving wealthy individuals and organizations the power to directly market and advertise on behalf (or against) candidiates all the way up until election day.</p>
+<p>This issue was once again brought to light at a recent talk at MIT&#8217;s Media Lab by political activist and director of the Foundation for Ethics at Harvard University, Lawrence Lessig. Lessig has focused the past five years on battling political corruption and focused the discussion on systemic corruption in the current political system.</p>
+<p>He emphasized SuperPACs as a poingnent example of corruption. The January 2010 ruling of Citizens United vs the FEC overturned a law that prohibited corporations and unions from spending on &#8220;electioneering communication&#8221;, which encompasses any television, radio or other communication that mentions a candidate close to election time. This was designed to limit the amount of influence third parties can have on the election. With the law overturned, any corporation can act a candidate&#8217;s third arm and effectively help fund the candidate&#8217;s marketing campaign throughout the election. Candidates are no longer</p>
+<p>&nbsp;</p>
+<p>There has been a surge in the number and funding of SuperPACs. The following diagram depicts the number of (dashed line) and total funding of (solid line) SuperPACs over the past ten years. Although SuperPACs (otherwise called Individual Expenditures) have always existed, the number has doubled since the Citizens United ruling, while the total funding has increased 12 fold, from $9 million to $122 million.</p>
+<p><img class="alignnone" src="https://github.com/sirrice/newshw2/raw/master/src/figs/total_pac_indep_summary.png" alt="" width="80%" height="80%" /></p>
+<p>Not only have the number and total funding of SuperPACs gone up, so has the disparity of the top PACs compared to smaller PACs. The following diagram is a cumulative plot of PAC funds. The x-axis show&#8217;s the size of a single PAC&#8217;s (let&#8217;s call it PACMan) funds in the millions, while the y-axis shows the cumulative amount of funds of all PACs the same size or smaller than PACMan. Each differently colored line is the data for a different year. We see a similar story, before 2010, the largest PAC only had $2.5 million. Now, the largest SuperPACs how command over $35 million, far more than some candidates&#8217; entire budgets in the last election. This is money used to not only back candidates that support the SuperPAC&#8217;s policies, but to attack candidates that speak contrary to the SuperPac&#8217;s opinions.</p>
+<p><img class="alignnone" src="https://github.com/sirrice/newshw2/raw/master/src/figs/cum_pac_indep_summary.png" alt="" width="80%" height="80%" /></p>
+<p>Lawrence made a powerful point during his talk. The mere existance of SuperPACs with so much money and power will force politicans to buy political insurance. Politicans will cater to a SuperPac policies in fear that competitor comes along armed with a different SuperPAC. At what point will these politicans consider the public?</p>
+<p>All data provided by the <a href="http://fec.gov/finance/disclosure/ftpsum.shtml">Federal Election Committee</a>.</p>
+<p>All source code <a href="https://github.com/sirrice/newshw2">available on github</a>.</p>
+<p>started 10PM Feb 21</p>
+<p>ended 2AM Feb 22</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+							<wfw:commentRss>https://partnews.mit.edu/2012/02/22/superpacs/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+		<item>
+		<title>Tracking a media diet</title>
+		<link>https://partnews.mit.edu/2012/02/22/tracking-a-media-diet/</link>
+				<comments>https://partnews.mit.edu/2012/02/22/tracking-a-media-diet/#comments</comments>
+				<pubDate>Wed, 22 Feb 2012 18:55:00 +0000</pubDate>
+		<dc:creator><![CDATA[Eugene Wu]]></dc:creator>
+				<category><![CDATA[All]]></category>
+		<category><![CDATA[Media Diaries]]></category>
+
+		<guid isPermaLink="false">http://partnews.brownbag.me/?p=124</guid>
+				<description><![CDATA[&#160; I approached the Media Diet in two ways.  This post will discuss one of them, which is a tool called IdeaPrint. In the current news environment, there are a small number of corporations and individuals that control the vast majority &#8230; <a href="https://partnews.mit.edu/2012/02/22/tracking-a-media-diet/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+								<content:encoded><![CDATA[<p>&nbsp;</p>
+<p>I approached the Media Diet in two ways.  This post will discuss one of them, which is a tool called <strong>IdeaPrint</strong>.</p>
+<p>In the current news environment, there are a small number of corporations and individuals that control the vast majority of media that is produced, and a vast number of smaller blogs and organizations that, in aggregate, provide balanced and far reaching reports of the news.   Despite so many choices, many people still adhere to a small number of news sources that will inevitably result in biased views.</p>
+<p>The first component of my media diet is a tool called IdeaPrint.  The ultimate goal is a tool that can keep track of an individual&#8217;s &#8220;idea consumption&#8221; construct a unique &#8220;ideaprint&#8221;, similar to a fingerprint.  The ideaprint includes information about the biases that influence your idea sources.  For example, how much of your consumed ideas are owned by Rupert Murdoch?  This information can be further used to suggest additional articles and commentary to provide a more balanced view on topics.  Or can be used across your social circle to identify homogenous thought processes and enhance the variety of news content that you and your friends read.</p>
+<p>The current tool is built as a Google Chrome extension that simply aggregates the number of visits to major websites (those that have wikipedia articles) and displays the top 9 as a bar chart.  In contrast to tools such as RescueTime, the goal is to enhance the list of visited sites with information about the site owners, the amount of time spent reading an article and provide a simple API for custom analyses.</p>
+<p><img class="alignnone" src="https://github.com/sirrice/ideaprint/raw/master/screenshot.png" alt="" width="60%" height="60%" /></p>
+<p>The current implementation is a very hacked up prototype.  You can check out the source code at: <a href="https://github.com/sirrice/ideaprint">https://github.com/sirrice/ideaprint</a></p>
+]]></content:encoded>
+							<wfw:commentRss>https://partnews.mit.edu/2012/02/22/tracking-a-media-diet/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+							</item>
+	</channel>
+</rss>
